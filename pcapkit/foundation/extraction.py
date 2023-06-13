@@ -25,6 +25,8 @@ from pcapkit.foundation.engines.pcap import PCAP as PCAP_Engine
 from pcapkit.foundation.engines.pcapng import PCAPNG as PCAPNG_Engine
 from pcapkit.foundation.reassembly import ReassemblyManager
 from pcapkit.foundation.traceflow import TraceFlowManager
+from pcapkit.foundation.reassembly.data import ReassemblyData
+from pcapkit.foundation.traceflow.data import TraceFlowData
 from pcapkit.utilities.exceptions import (CallableError, FileNotFound, FormatError, IterableError,
                                           UnsupportedCall, stacklevel)
 from pcapkit.utilities.warnings import EngineWarning, FormatWarning, warn
@@ -40,8 +42,6 @@ if TYPE_CHECKING:
     from typing_extensions import Literal
 
     from pcapkit.foundation.engines.engine import Engine
-    from pcapkit.foundation.reassembly.data import ReassemblyData
-    from pcapkit.foundation.traceflow.data import TraceFlowData
     from pcapkit.protocols.misc.pcap.frame import Frame
     from pcapkit.protocols.misc.pcapng import PCAPNG
     from pcapkit.protocols.protocol import Protocol
