@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-content_root="../../../../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../../../genindex.html" /><link rel="search" title="Search" href="../../../../../search.html" />
 
-    <!-- Generated with Sphinx 7.1.2 and Furo 2023.07.26 -->
+    <!-- Generated with Sphinx 7.2.2 and Furo 2023.08.19 -->
         <title>pcapkit.protocols.schema.internet.ipv6_opts - PyPCAPKit</title>
       <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/styles/furo.css?v=135e06be" />
@@ -389,7 +389,9 @@
 <span class="k">if</span> <span class="n">SPHINX_TYPE_CHECKING</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">TypedDict</span>
 
-<div class="viewcode-block" id="TaggerIDInfo"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.TaggerIDInfo">[docs]</a>    <span class="k">class</span> <span class="nc">TaggerIDInfo</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<div class="viewcode-block" id="TaggerIDInfo">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.TaggerIDInfo">[docs]</a>
+    <span class="k">class</span> <span class="nc">TaggerIDInfo</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;TaggerID information.&quot;&quot;&quot;</span>
 
         <span class="c1">#: SMF mode.</span>
@@ -399,7 +401,10 @@
         <span class="c1">#: TaggerID length.</span>
         <span class="nb">len</span><span class="p">:</span> <span class="nb">int</span></div>
 
-<div class="viewcode-block" id="QuickStartFlags"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.QuickStartFlags">[docs]</a>    <span class="k">class</span> <span class="nc">QuickStartFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+
+<div class="viewcode-block" id="QuickStartFlags">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.QuickStartFlags">[docs]</a>
+    <span class="k">class</span> <span class="nc">QuickStartFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Quick-Start flags.&quot;&quot;&quot;</span>
 
         <span class="c1">#: QS function.</span>
@@ -407,7 +412,10 @@
         <span class="c1">#: Rate request/report.</span>
         <span class="n">rate</span><span class="p">:</span> <span class="nb">int</span></div>
 
-<div class="viewcode-block" id="RPLFlags"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.RPLFlags">[docs]</a>    <span class="k">class</span> <span class="nc">RPLFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+
+<div class="viewcode-block" id="RPLFlags">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.RPLFlags">[docs]</a>
+    <span class="k">class</span> <span class="nc">RPLFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;RPL flags.&quot;&quot;&quot;</span>
 
         <span class="c1">#: Down flag.</span>
@@ -417,7 +425,10 @@
         <span class="c1">#: Forwarding error flag.</span>
         <span class="n">fwd_err</span><span class="p">:</span> <span class="nb">int</span></div>
 
-<div class="viewcode-block" id="MPLFlags"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.MPLFlags">[docs]</a>    <span class="k">class</span> <span class="nc">MPLFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+
+<div class="viewcode-block" id="MPLFlags">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.MPLFlags">[docs]</a>
+    <span class="k">class</span> <span class="nc">MPLFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;MPL flags.&quot;&quot;&quot;</span>
 
         <span class="c1">#: Seed-ID type. Identifies the length of the</span>
@@ -431,7 +442,10 @@
         <span class="c1">#: conforms to this specification.</span>
         <span class="n">drop</span><span class="p">:</span> <span class="nb">int</span></div>
 
-<div class="viewcode-block" id="DFFFlags"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.DFFFlags">[docs]</a>    <span class="k">class</span> <span class="nc">DFFFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+
+<div class="viewcode-block" id="DFFFlags">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.DFFFlags">[docs]</a>
+    <span class="k">class</span> <span class="nc">DFFFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;``IP_DFF`` flags.&quot;&quot;&quot;</span>
 
         <span class="c1">#: Version.</span>
@@ -441,7 +455,10 @@
         <span class="c1">#: Retune flag.</span>
         <span class="n">ret</span><span class="p">:</span> <span class="nb">int</span></div>
 
-<div class="viewcode-block" id="SMFDPDTestFlag"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFDPDTestFlag">[docs]</a>    <span class="k">class</span> <span class="nc">SMFDPDTestFlag</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+
+<div class="viewcode-block" id="SMFDPDTestFlag">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFDPDTestFlag">[docs]</a>
+    <span class="k">class</span> <span class="nc">SMFDPDTestFlag</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;``SMF_DPD`` test flag.&quot;&quot;&quot;</span>
 
         <span class="c1">#: Length.</span>
@@ -449,20 +466,29 @@
         <span class="c1">#: DPD mode.</span>
         <span class="n">mode</span><span class="p">:</span> <span class="nb">int</span></div>
 
-<div class="viewcode-block" id="QSTestFlags"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.QSTestFlags">[docs]</a>    <span class="k">class</span> <span class="nc">QSTestFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+
+<div class="viewcode-block" id="QSTestFlags">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.QSTestFlags">[docs]</a>
+    <span class="k">class</span> <span class="nc">QSTestFlags</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Quick start test flag.&quot;&quot;&quot;</span>
 
         <span class="c1">#: QS function.</span>
         <span class="n">func</span><span class="p">:</span> <span class="nb">int</span></div>
 
-<div class="viewcode-block" id="QSNonce"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.QSNonce">[docs]</a>    <span class="k">class</span> <span class="nc">QSNonce</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+
+<div class="viewcode-block" id="QSNonce">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.QSNonce">[docs]</a>
+    <span class="k">class</span> <span class="nc">QSNonce</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Quick start nonce.&quot;&quot;&quot;</span>
 
         <span class="c1">#: Nonce.</span>
         <span class="n">nonce</span><span class="p">:</span> <span class="nb">int</span></div>
 
 
-<div class="viewcode-block" id="mpl_opt_seed_id_len"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.mpl_opt_seed_id_len">[docs]</a><span class="k">def</span> <span class="nf">mpl_opt_seed_id_len</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;int&#39;</span><span class="p">:</span>
+
+<div class="viewcode-block" id="mpl_opt_seed_id_len">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.mpl_opt_seed_id_len">[docs]</a>
+<span class="k">def</span> <span class="nf">mpl_opt_seed_id_len</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;int&#39;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Return MPL Seed-ID length.</span>
 
 <span class="sd">    Args:</span>
@@ -484,7 +510,10 @@
     <span class="k">raise</span> <span class="n">FieldValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;IPv6-Opts: invalid MPL Seed-ID type: </span><span class="si">{</span><span class="n">s_type</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="smf_dpd_data_selector"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.smf_dpd_data_selector">[docs]</a><span class="k">def</span> <span class="nf">smf_dpd_data_selector</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Field&#39;</span><span class="p">:</span>
+
+<div class="viewcode-block" id="smf_dpd_data_selector">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.smf_dpd_data_selector">[docs]</a>
+<span class="k">def</span> <span class="nf">smf_dpd_data_selector</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Field&#39;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Selector function for :attr:`_SMFDPDOption.data` field.</span>
 
 <span class="sd">    Args:</span>
@@ -507,7 +536,10 @@
     <span class="k">raise</span> <span class="n">FieldValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;IPv6-Opts: invalid SMF DPD mode: </span><span class="si">{</span><span class="n">mode</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="smf_i_dpd_tid_selector"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.smf_i_dpd_tid_selector">[docs]</a><span class="k">def</span> <span class="nf">smf_i_dpd_tid_selector</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Field&#39;</span><span class="p">:</span>
+
+<div class="viewcode-block" id="smf_i_dpd_tid_selector">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.smf_i_dpd_tid_selector">[docs]</a>
+<span class="k">def</span> <span class="nf">smf_i_dpd_tid_selector</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Field&#39;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Selector function for :attr:`SMFIdentificationBasedDPDOption.tid` field.</span>
 
 <span class="sd">    Args:</span>
@@ -544,7 +576,10 @@
     <span class="k">return</span> <span class="n">BytesField</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="n">tid_len</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="quick_start_data_selector"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.quick_start_data_selector">[docs]</a><span class="k">def</span> <span class="nf">quick_start_data_selector</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Field&#39;</span><span class="p">:</span>
+
+<div class="viewcode-block" id="quick_start_data_selector">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.quick_start_data_selector">[docs]</a>
+<span class="k">def</span> <span class="nf">quick_start_data_selector</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Field&#39;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Selector function for :attr:`_QuickStartOption.data` field.</span>
 
 <span class="sd">    Args:</span>
@@ -569,7 +604,10 @@
     <span class="k">raise</span> <span class="n">FieldValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;IPv6-Opts: invalid QS function: </span><span class="si">{</span><span class="n">func</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="Option"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.Option">[docs]</a><span class="k">class</span> <span class="nc">Option</span><span class="p">(</span><span class="n">Schema</span><span class="p">):</span>
+
+<div class="viewcode-block" id="Option">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.Option">[docs]</a>
+<span class="k">class</span> <span class="nc">Option</span><span class="p">(</span><span class="n">Schema</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts options.&quot;&quot;&quot;</span>
 
     <span class="c1">#: Option type.</span>
@@ -580,7 +618,9 @@
         <span class="k">lambda</span> <span class="n">pkt</span><span class="p">:</span> <span class="n">pkt</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="n">Enum_Option</span><span class="o">.</span><span class="n">Pad1</span><span class="p">,</span>
     <span class="p">)</span>
 
-<div class="viewcode-block" id="Option.post_process"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.Option.post_process">[docs]</a>    <span class="k">def</span> <span class="nf">post_process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Schema&#39;</span><span class="p">:</span>
+<div class="viewcode-block" id="Option.post_process">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.Option.post_process">[docs]</a>
+    <span class="k">def</span> <span class="nf">post_process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Schema&#39;</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Revise ``schema`` data after unpacking process.</span>
 
 <span class="sd">        Args:</span>
@@ -593,10 +633,14 @@
         <span class="c1"># for Pad1 option, length is always 0</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">Enum_Option</span><span class="o">.</span><span class="n">Pad1</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">len</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="k">return</span> <span class="bp">self</span></div></div>
+        <span class="k">return</span> <span class="bp">self</span></div>
+</div>
 
 
-<div class="viewcode-block" id="UnassignedOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.UnassignedOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="UnassignedOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.UnassignedOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">UnassignedOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts unassigned options.&quot;&quot;&quot;</span>
 
@@ -607,7 +651,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="s1">&#39;bytes&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="PadOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.PadOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="PadOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.PadOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">PadOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts padding options.&quot;&quot;&quot;</span>
 
@@ -618,7 +665,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="TunnelEncapsulationLimitOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.TunnelEncapsulationLimitOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="TunnelEncapsulationLimitOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.TunnelEncapsulationLimitOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">TunnelEncapsulationLimitOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts tunnel encapsulation limit options.&quot;&quot;&quot;</span>
 
@@ -629,7 +679,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="RouterAlertOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.RouterAlertOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="RouterAlertOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.RouterAlertOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">RouterAlertOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts router alert options.&quot;&quot;&quot;</span>
 
@@ -640,7 +693,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">alert</span><span class="p">:</span> <span class="s1">&#39;Enum_RouterAlert&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="CALIPSOOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.CALIPSOOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="CALIPSOOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.CALIPSOOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">CALIPSOOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts common architecture label IPv6 security options.&quot;&quot;&quot;</span>
 
@@ -663,6 +719,7 @@
     <span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">cmpt_len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>
                      <span class="n">level</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">checksum</span><span class="p">:</span> <span class="s1">&#39;bytes&#39;</span><span class="p">,</span> <span class="n">bitmap</span><span class="p">:</span> <span class="s1">&#39;Optional[bytes]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
+
 
 
 <span class="nd">@schema_final</span>
@@ -693,7 +750,9 @@
         <span class="k">return</span> <span class="n">ret</span>
 
 
-<div class="viewcode-block" id="SMFDPDOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFDPDOption">[docs]</a><span class="k">class</span> <span class="nc">SMFDPDOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
+<div class="viewcode-block" id="SMFDPDOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFDPDOption">[docs]</a>
+<span class="k">class</span> <span class="nc">SMFDPDOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts simplified multicast forwarding duplicate packet</span>
 <span class="sd">    detection (``SMF_DPD``) options.&quot;&quot;&quot;</span>
 
@@ -701,7 +760,10 @@
         <span class="n">mode</span><span class="p">:</span> <span class="s1">&#39;Enum_SMFDPDMode&#39;</span></div>
 
 
-<div class="viewcode-block" id="SMFIdentificationBasedDPDOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFIdentificationBasedDPDOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="SMFIdentificationBasedDPDOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFIdentificationBasedDPDOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">SMFIdentificationBasedDPDOption</span><span class="p">(</span><span class="n">SMFDPDOption</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts SMF identification-based DPD options.&quot;&quot;&quot;</span>
 
@@ -724,7 +786,9 @@
         <span class="mi">1</span> <span class="k">if</span> <span class="n">pkt</span><span class="p">[</span><span class="s1">&#39;info&#39;</span><span class="p">][</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="s1">&#39;info&#39;</span><span class="p">][</span><span class="s1">&#39;len&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
     <span class="p">))</span>
 
-<div class="viewcode-block" id="SMFIdentificationBasedDPDOption.post_process"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFIdentificationBasedDPDOption.post_process">[docs]</a>    <span class="k">def</span> <span class="nf">post_process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;SMFIdentificationBasedDPDOption&#39;</span><span class="p">:</span>
+<div class="viewcode-block" id="SMFIdentificationBasedDPDOption.post_process">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFIdentificationBasedDPDOption.post_process">[docs]</a>
+    <span class="k">def</span> <span class="nf">post_process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;SMFIdentificationBasedDPDOption&#39;</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Revise ``schema`` data after unpacking process.</span>
 
 <span class="sd">        Args:</span>
@@ -738,19 +802,25 @@
         <span class="n">ret</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="n">Enum_SMFDPDMode</span><span class="o">.</span><span class="n">I_DPD</span>
         <span class="k">return</span> <span class="n">ret</span></div>
 
+
     <span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">info</span><span class="p">:</span> <span class="s1">&#39;TaggerIDInfo&#39;</span><span class="p">,</span>
                      <span class="n">tid</span><span class="p">:</span> <span class="s1">&#39;Optional[bytes]&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="s1">&#39;bytes&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="SMFHashBasedDPDOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFHashBasedDPDOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="SMFHashBasedDPDOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFHashBasedDPDOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">SMFHashBasedDPDOption</span><span class="p">(</span><span class="n">SMFDPDOption</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts SMF hash-based DPD options.&quot;&quot;&quot;</span>
 
     <span class="c1">#: Hash assist value (HAV).</span>
     <span class="n">hav</span><span class="p">:</span> <span class="s1">&#39;bytes&#39;</span> <span class="o">=</span> <span class="n">BytesField</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="k">lambda</span> <span class="n">pkt</span><span class="p">:</span> <span class="n">pkt</span><span class="p">[</span><span class="s1">&#39;len&#39;</span><span class="p">])</span>
 
-<div class="viewcode-block" id="SMFHashBasedDPDOption.post_process"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFHashBasedDPDOption.post_process">[docs]</a>    <span class="k">def</span> <span class="nf">post_process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;SMFIdentificationBasedDPDOption&#39;</span><span class="p">:</span>
+<div class="viewcode-block" id="SMFHashBasedDPDOption.post_process">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.SMFHashBasedDPDOption.post_process">[docs]</a>
+    <span class="k">def</span> <span class="nf">post_process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;SMFIdentificationBasedDPDOption&#39;</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Revise ``schema`` data after unpacking process.</span>
 
 <span class="sd">        Args:</span>
@@ -764,11 +834,15 @@
         <span class="n">ret</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="n">Enum_SMFDPDMode</span><span class="o">.</span><span class="n">H_DPD</span>
         <span class="k">return</span> <span class="n">ret</span></div>
 
+
     <span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">hav</span><span class="p">:</span> <span class="s1">&#39;bytes&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="PDMOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.PDMOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="PDMOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.PDMOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">PDMOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts performance and diagnostic metrics (PDM) options.&quot;&quot;&quot;</span>
 
@@ -788,6 +862,7 @@
     <span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">scaledtlr</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">scaledtls</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>
                      <span class="n">psntp</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">psnlr</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">deltatlr</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">deltatls</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
+
 
 
 <span class="nd">@schema_final</span>
@@ -818,7 +893,9 @@
         <span class="k">return</span> <span class="n">ret</span>
 
 
-<div class="viewcode-block" id="QuickStartOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.QuickStartOption">[docs]</a><span class="k">class</span> <span class="nc">QuickStartOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
+<div class="viewcode-block" id="QuickStartOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.QuickStartOption">[docs]</a>
+<span class="k">class</span> <span class="nc">QuickStartOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts quick start options.&quot;&quot;&quot;</span>
 
     <span class="c1">#: Flags.</span>
@@ -829,6 +906,7 @@
 
     <span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
         <span class="n">func</span><span class="p">:</span> <span class="s1">&#39;Enum_QSFunction&#39;</span></div>
+
 
 
 <span class="nd">@schema_final</span>
@@ -863,7 +941,9 @@
                      <span class="n">nonce</span><span class="p">:</span> <span class="s1">&#39;QSNonce&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span>
 
 
-<div class="viewcode-block" id="RPLOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.RPLOption">[docs]</a><span class="nd">@schema_final</span>
+<div class="viewcode-block" id="RPLOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.RPLOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">RPLOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts routing protocol for low-power and lossy networks (RPL) options.&quot;&quot;&quot;</span>
 
@@ -883,7 +963,10 @@
                      <span class="n">rank</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="MPLOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.MPLOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="MPLOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.MPLOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">MPLOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts multicast protocol for low-power and lossy networks (MPL) options.&quot;&quot;&quot;</span>
 
@@ -905,7 +988,9 @@
         <span class="mi">0</span> <span class="k">if</span> <span class="n">pkt</span><span class="p">[</span><span class="s1">&#39;flags&#39;</span><span class="p">][</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">mpl_opt_seed_id_len</span><span class="p">(</span><span class="n">pkt</span><span class="p">)</span>
     <span class="p">))</span>
 
-<div class="viewcode-block" id="MPLOption.post_process"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.MPLOption.post_process">[docs]</a>    <span class="k">def</span> <span class="nf">post_process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Schema&#39;</span><span class="p">:</span>
+<div class="viewcode-block" id="MPLOption.post_process">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.MPLOption.post_process">[docs]</a>
+    <span class="k">def</span> <span class="nf">post_process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">:</span> <span class="s1">&#39;dict[str, Any]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Schema&#39;</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Revise ``schema`` data after unpacking process.</span>
 
 <span class="sd">        Args:</span>
@@ -919,12 +1004,16 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">seed</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="n">NoValue</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span></div>
 
+
     <span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">flags</span><span class="p">:</span> <span class="s1">&#39;MPLFlags&#39;</span><span class="p">,</span> <span class="n">seq</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>
                      <span class="n">seed</span><span class="p">:</span> <span class="s1">&#39;Optional[int]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="ILNPOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.ILNPOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="ILNPOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.ILNPOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">ILNPOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts identifier-locator network protocol (ILNP) options.&quot;&quot;&quot;</span>
 
@@ -935,7 +1024,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">nonce</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="LineIdentificationOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.LineIdentificationOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="LineIdentificationOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.LineIdentificationOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">LineIdentificationOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts line-identification options.&quot;&quot;&quot;</span>
 
@@ -948,7 +1040,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">id_len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="s1">&#39;bytes&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="JumboPayloadOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.JumboPayloadOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="JumboPayloadOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.JumboPayloadOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">JumboPayloadOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts jumbo payload options.&quot;&quot;&quot;</span>
 
@@ -959,7 +1054,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">jumbo_len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="HomeAddressOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.HomeAddressOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="HomeAddressOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.HomeAddressOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">HomeAddressOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts home address options.&quot;&quot;&quot;</span>
 
@@ -970,7 +1068,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">addr</span><span class="p">:</span> <span class="s1">&#39;IPv6Address | int | str | bytes&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="IPDFFOption"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.IPDFFOption">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="IPDFFOption">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.IPDFFOption">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">IPDFFOption</span><span class="p">(</span><span class="n">Option</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts depth-first forwarding (``IP_DFF``) options.&quot;&quot;&quot;</span>
 
@@ -987,7 +1088,10 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;Enum_Option&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="n">flags</span><span class="p">:</span> <span class="s1">&#39;DFFFlags&#39;</span><span class="p">,</span> <span class="n">seq</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
 
 
-<div class="viewcode-block" id="IPv6_Opts"><a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.IPv6_Opts">[docs]</a><span class="nd">@schema_final</span>
+
+<div class="viewcode-block" id="IPv6_Opts">
+<a class="viewcode-back" href="../../../../../pcapkit/protocols/internet/ipv6_opts.html#pcapkit.protocols.schema.internet.ipv6_opts.IPv6_Opts">[docs]</a>
+<span class="nd">@schema_final</span>
 <span class="k">class</span> <span class="nc">IPv6_Opts</span><span class="p">(</span><span class="n">Schema</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Header schema for IPv6-Opts packet.&quot;&quot;&quot;</span>
 
@@ -1025,6 +1129,7 @@
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">next</span><span class="p">:</span> <span class="s1">&#39;Enum_TransType&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>
                      <span class="n">options</span><span class="p">:</span> <span class="s1">&#39;bytes | list[bytes | Option]&#39;</span><span class="p">,</span>
                      <span class="n">payload</span><span class="p">:</span> <span class="s1">&#39;bytes | Protocol | Schema&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;None&#39;</span><span class="p">:</span> <span class="o">...</span></div>
+
 </pre></div>
         </article>
       </div>
@@ -1057,9 +1162,9 @@
       
     </aside>
   </div>
-</div><script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js?v=1722d5a6"></script>
+</div><script src="../../../../../_static/documentation_options.js?v=824a8bcd"></script>
     <script src="../../../../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../../../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
