@@ -768,7 +768,7 @@ headers preceding the SCCP packet.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DOCSIS">
 <span class="sig-name descname"><span class="pre">DOCSIS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">143</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DOCSIS" title="Link to this definition">#</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DOCSIS</span></code>] DOCSIS MAC frames, as described by the DOCSIS 3.1 MAC and
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DOCSIS</span></code>] DOCSIS MAC frames, as described by the DOCSIS 4.0 MAC and
 Upper Layer Protocols Interface Specification or earlier specifications for
 MAC frames.</p>
 </dd></dl>
@@ -1036,7 +1036,8 @@ FRF.12 Interface fragmentation format fragmentation header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.A429">
 <span class="sig-name descname"><span class="pre">A429</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">184</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.A429" title="Link to this definition">#</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_A429</span></code>] ARINC 429 frames. Every frame contains a 32-bit A429 label.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_A429</span></code>] ARINC 429 frames. Every frame contains a 32-bit A429 word, in
+little-endian format.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1416,8 +1417,7 @@ before the message sequence.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DVB_CI">
 <span class="sig-name descname"><span class="pre">DVB_CI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">235</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DVB_CI" title="Link to this definition">#</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DVB_CI</span></code>] DVB-CI (DVB Common Interface for communication between a PC
-Card module and a DVB receiver), with the message format specified by the
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DVB_CI</span></code>] DVB-CI messages, with the message format specified by the
 PCAP format for DVB-CI specification.</p>
 </dd></dl>
 
@@ -3932,7 +3932,7 @@ simple-multicast]</p>
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2017-2023, Jarry Shaw
+                Copyright &#169; 2017-2024, Jarry Shaw
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -3973,7 +3973,7 @@ simple-multicast]</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=c3a4bc68"></script>
+</div><script src="../../_static/documentation_options.js?v=6ae4c80e"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
