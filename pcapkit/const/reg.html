@@ -387,16 +387,7 @@ which is automatically generated from <a class="reference internal" href="../ven
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NULL">
 <span class="sig-name descname"><span class="pre">NULL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NULL" title="Link to this definition">#</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NULL</span></code>] BSD loopback encapsulation; the link layer header is a 4-byte
-field, in host byte order, containing a value of 2 for IPv4 packets, a value
-of either 24, 28, or 30 for IPv6 packets, a value of 7 for OSI packets, or a
-value of 23 for IPX packets. All of the IPv6 values correspond to IPv6
-packets; code reading files should check for all of them. Note that <code class="docutils literal notranslate"><span class="pre">host</span>
-<span class="pre">byte</span> <span class="pre">order</span></code> is the byte order of the machine on that the packets are
-captured; if a live capture is being done, <code class="docutils literal notranslate"><span class="pre">host</span> <span class="pre">byte</span> <span class="pre">order</span></code> is the byte
-order of the machine capturing the packets, but if a <code class="docutils literal notranslate"><span class="pre">savefile</span></code> is being
-read, the byte order is not necessarily that of the machine reading the
-capture file.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NULL</span></code>] BSD loopback encapsulation.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -544,11 +535,7 @@ without an FCS at the end of the frame.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LOOP">
 <span class="sig-name descname"><span class="pre">LOOP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">108</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LOOP" title="Link to this definition">#</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LOOP</span></code>] OpenBSD loopback encapsulation; the link-layer header is a
-4-byte field, in network byte order, containing a value of 2 for IPv4
-packets, a value of either 24, 28, or 30 for IPv6 packets, a value of 7 for
-OSI packets, or a value of 23 for IPX packets. All of the IPv6 values
-correspond to IPv6 packets; code reading files should check for all of them.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LOOP</span></code>] OpenBSD loopback encapsulation.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -778,8 +765,7 @@ MAC frames.</p>
 <span class="sig-name descname"><span class="pre">LINUX_IRDA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">144</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LINUX_IRDA" title="Link to this definition">#</a></dt>
 <dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LINUX_IRDA</span></code>] Linux-IrDA packets, with a LINKTYPE_LINUX_IRDA
 header, with the payload for IrDA frames beginning with by the IrLAP header
-as defined by IrDA Data Specifications, including the IrDA Link Access
-Protocol specification.</p>
+as defined by the IrDA Link Access Protocol specification.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1494,7 +1480,8 @@ Q.2110 for ATM AAL5 traffic, and by NBAP packets for SCTP traffic.</p>
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NFC_LLCP">
 <span class="sig-name descname"><span class="pre">NFC_LLCP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">245</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NFC_LLCP" title="Link to this definition">#</a></dt>
 <dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NFC_LLCP</span></code>] Pseudo-header for NFC LLCP packet captures, followed by
-frame data for the LLCP Protocol as specified by NFCForum-TS-LLCP_1.1.</p>
+frame data for the LLCP Protocol as specified by the Logical Link Control
+Protocol Technical Specification.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1508,7 +1495,7 @@ frame data for the LLCP Protocol as specified by NFCForum-TS-LLCP_1.1.</p>
 <span class="sig-name descname"><span class="pre">INFINIBAND</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">247</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.INFINIBAND" title="Link to this definition">#</a></dt>
 <dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_INFINIBAND</span></code>] Raw InfiniBand frames, starting with the Local Routing
 Header, as specified in Chapter 5 “Data packet format” of InfiniBand™
-Architectural Specification Release 1.2.1 Volume 1 - General Specifications.</p>
+Architecture Specification Release 1.2.1 Volume 1 - General Specifications.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1831,8 +1818,8 @@ header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NETANALYZER_NG">
 <span class="sig-name descname"><span class="pre">NETANALYZER_NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">291</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NETANALYZER_NG" title="Link to this definition">#</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER_NG</span></code>] Hilscher Gesellschaft fuer Systemautomation mbH
-netANALYZER NG hardware and software (specification).</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER_NG</span></code>] Reserved for Hilscher Gesellschaft fuer
+Systemautomation mbH netANALYZER NG hardware and software.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1899,6 +1886,16 @@ described in the specification.</p>
 <dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MDB</span></code>] MDB (Multi-Drop Bus) protocol between a vending machine
 controller and peripherals inside the vending machine, with the message
 format specified by the PCAP format for MDB specification.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DECT_NR">
+<span class="sig-name descname"><span class="pre">DECT_NR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">301</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DECT_NR" title="Link to this definition">#</a></dt>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DECT_NR</span></code>] DECT-2020 New Radio (NR) MAC layer specified in ETSI TS
+103 636-4. The Physical Header Field is always encoded using 80 bits (10
+bytes). Broadcast transmissions using 40 bits (5 bytes) is padded with 40
+zero bits (5 bytes). When padding is used the Receiver Identity value 0x0000
+(reserved address) is used to detect broadcast transmissions.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -3973,7 +3970,7 @@ simple-multicast]</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=6ae4c80e"></script>
+</div><script src="../../_static/documentation_options.js?v=82c789be"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
