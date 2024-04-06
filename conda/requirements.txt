@@ -9,7 +9,7 @@ dpkt==1.9.8
 emoji==2.11.0
 html5lib==1.1
 idna==3.6
-lxml==5.1.1
+lxml==5.2.1
 packaging==24.0
 pathlib2==2.3.7.post1
 pyshark==0.6
@@ -20,6 +20,6 @@ six==1.16.0
 soupsieve==2.5
 tbtrim==0.3.1
 termcolor==2.4.0
-typing-extensions==4.10.0
+typing-extensions==4.11.0
 urllib3==2.2.1
 webencodings==0.5.1
