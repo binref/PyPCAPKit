@@ -11,7 +11,7 @@
 <meta name="description" content="pcapkit.utilities contains several useful functions and classes which are fundations of pcapkit, including decorater function seekset() and beholder(), and several user-refined exceptions and warni..." />
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="User Defined Exceptions" href="exceptions.html" /><link rel="prev" title="PCAP Dumper" href="../dumpkit/pcap.html" />
 
-    <!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.7 and Furo 2024.01.29 -->
         <title>Module Utilities - PyPCAPKit</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
@@ -357,7 +357,7 @@
         </div>
         <article role="main">
           <section id="module-pcapkit.utilities">
-<span id="module-utilities"></span><h1>Module Utilities<a class="headerlink" href="#module-pcapkit.utilities" title="Link to this heading">#</a></h1>
+<span id="module-utilities"></span><h1>Module Utilities<a class="headerlink" href="#module-pcapkit.utilities" title="Link to this heading">¶</a></h1>
 <p><a class="reference internal" href="#module-pcapkit.utilities" title="pcapkit.utilities"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pcapkit.utilities</span></code></a> contains several useful functions
 and classes which are fundations of <a class="reference internal" href="../index.html#module-pcapkit" title="pcapkit"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pcapkit</span></code></a>, including
 decorater function <a class="reference internal" href="#pcapkit.utilities.decorators.seekset" title="pcapkit.utilities.decorators.seekset"><code class="xref py py-func docutils literal notranslate"><span class="pre">seekset()</span></code></a>
@@ -389,10 +389,10 @@ several user-refined exceptions and warnings.</p>
 </ul>
 </div>
 <section id="auxiliary-functions">
-<h2>Auxiliary Functions<a class="headerlink" href="#auxiliary-functions" title="Link to this heading">#</a></h2>
+<h2>Auxiliary Functions<a class="headerlink" href="#auxiliary-functions" title="Link to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pcapkit.utilities.exceptions.stacklevel">
-<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.exceptions.</span></span><span class="sig-name descname"><span class="pre">stacklevel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/exceptions.html#stacklevel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.exceptions.stacklevel" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.exceptions.</span></span><span class="sig-name descname"><span class="pre">stacklevel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/exceptions.html#stacklevel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.exceptions.stacklevel" title="Link to this definition">¶</a></dt>
 <dd><p>Fetch current stack level.</p>
 <p>The function will walk through the straceback stack (<a class="reference external" href="https://docs.python.org/3/library/traceback.html#traceback.extract_stack" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">traceback.extract_stack()</span></code></a>),
 and fetch the stack level where the path contains <code class="docutils literal notranslate"><span class="pre">/pcapkit/</span></code>. So that it won’t
@@ -409,7 +409,7 @@ display any disturbing internal traceback information when raising errors.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pcapkit.utilities.warnings.warn">
-<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.warnings.</span></span><span class="sig-name descname"><span class="pre">warn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stacklevel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/warnings.html#warn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.warnings.warn" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.warnings.</span></span><span class="sig-name descname"><span class="pre">warn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stacklevel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/warnings.html#warn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.warnings.warn" title="Link to this definition">¶</a></dt>
 <dd><p>Wrapper function of <a class="reference external" href="https://docs.python.org/3/library/warnings.html#warnings.warn" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">warnings.warn()</span></code></a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -427,13 +427,13 @@ display any disturbing internal traceback information when raising errors.</p>
 
 </section>
 <section id="module-pcapkit.utilities.logging">
-<span id="logging-system"></span><h2>Logging System<a class="headerlink" href="#module-pcapkit.utilities.logging" title="Link to this heading">#</a></h2>
+<span id="logging-system"></span><h2>Logging System<a class="headerlink" href="#module-pcapkit.utilities.logging" title="Link to this heading">¶</a></h2>
 <p><a class="reference internal" href="#module-pcapkit.utilities.logging" title="pcapkit.utilities.logging"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pcapkit.utilities.logging</span></code></a> contains naïve integration
 of the Python logging system, i.e. a <a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Logger" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">logging.Logger</span></code></a>
 instance as <a class="reference internal" href="#pcapkit.utilities.logging.logger" title="pcapkit.utilities.logging.logger"><code class="xref py py-data docutils literal notranslate"><span class="pre">logger</span></code></a>.</p>
 <dl class="py data">
 <dt class="sig sig-object py" id="pcapkit.utilities.logging.logger">
-<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.logging.</span></span><span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#pcapkit.utilities.logging.logger" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.logging.</span></span><span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#pcapkit.utilities.logging.logger" title="Link to this definition">¶</a></dt>
 <dd><p><a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Logger" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Logger</span></code></a> instance named after <code class="docutils literal notranslate"><span class="pre">pcapkit</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -443,10 +443,10 @@ instance as <a class="reference internal" href="#pcapkit.utilities.logging.logge
 </dd></dl>
 
 <section id="environment-variables">
-<h3>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading">#</a></h3>
+<h3>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading">¶</a></h3>
 <dl class="py data">
 <dt class="sig sig-object py" id="pcapkit.utilities.logging.DEVMODE">
-<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.logging.</span></span><span class="sig-name descname"><span class="pre">DEVMODE</span></span><a class="headerlink" href="#pcapkit.utilities.logging.DEVMODE" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.logging.</span></span><span class="sig-name descname"><span class="pre">DEVMODE</span></span><a class="headerlink" href="#pcapkit.utilities.logging.DEVMODE" title="Link to this definition">¶</a></dt>
 <dd><p>Development mode flag.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -457,7 +457,7 @@ instance as <a class="reference internal" href="#pcapkit.utilities.logging.logge
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pcapkit.utilities.logging.VERBOSE">
-<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.logging.</span></span><span class="sig-name descname"><span class="pre">VERBOSE</span></span><a class="headerlink" href="#pcapkit.utilities.logging.VERBOSE" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.logging.</span></span><span class="sig-name descname"><span class="pre">VERBOSE</span></span><a class="headerlink" href="#pcapkit.utilities.logging.VERBOSE" title="Link to this definition">¶</a></dt>
 <dd><p>Verbose output flag.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -468,7 +468,7 @@ instance as <a class="reference internal" href="#pcapkit.utilities.logging.logge
 
 <dl class="py data">
 <dt class="sig sig-object py" id="pcapkit.utilities.logging.SPHINX_TYPE_CHECKING">
-<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.logging.</span></span><span class="sig-name descname"><span class="pre">SPHINX_TYPE_CHECKING</span></span><a class="headerlink" href="#pcapkit.utilities.logging.SPHINX_TYPE_CHECKING" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.logging.</span></span><span class="sig-name descname"><span class="pre">SPHINX_TYPE_CHECKING</span></span><a class="headerlink" href="#pcapkit.utilities.logging.SPHINX_TYPE_CHECKING" title="Link to this definition">¶</a></dt>
 <dd><p>This is a workaround for <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TYPE_CHECKING" title="(in Python v3.12)"><code class="xref py py-data docutils literal notranslate"><span class="pre">TYPE_CHECKING</span></code></a> in Sphinx.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -480,14 +480,14 @@ instance as <a class="reference internal" href="#pcapkit.utilities.logging.logge
 </section>
 </section>
 <section id="module-pcapkit.utilities.decorators">
-<span id="decorator-functions"></span><h2>Decorator Functions<a class="headerlink" href="#module-pcapkit.utilities.decorators" title="Link to this heading">#</a></h2>
+<span id="decorator-functions"></span><h2>Decorator Functions<a class="headerlink" href="#module-pcapkit.utilities.decorators" title="Link to this heading">¶</a></h2>
 <p><a class="reference internal" href="#module-pcapkit.utilities.decorators" title="pcapkit.utilities.decorators"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pcapkit.utilities.decorators</span></code></a> contains several useful
 decorators, including <a class="reference internal" href="#pcapkit.utilities.decorators.seekset" title="pcapkit.utilities.decorators.seekset"><code class="xref py py-func docutils literal notranslate"><span class="pre">seekset()</span></code></a>,
 <a class="reference internal" href="#pcapkit.utilities.decorators.beholder" title="pcapkit.utilities.decorators.beholder"><code class="xref py py-func docutils literal notranslate"><span class="pre">beholder()</span></code></a> and
 <a class="reference internal" href="#pcapkit.utilities.decorators.prepare" title="pcapkit.utilities.decorators.prepare"><code class="xref py py-func docutils literal notranslate"><span class="pre">prepare()</span></code></a>.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="pcapkit.utilities.decorators.seekset">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.decorators.</span></span><span class="sig-name descname"><span class="pre">seekset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/decorators.html#seekset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.decorators.seekset" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.decorators.</span></span><span class="sig-name descname"><span class="pre">seekset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/decorators.html#seekset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.decorators.seekset" title="Link to this definition">¶</a></dt>
 <dd><p>Read file from start then set back to original.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -520,7 +520,7 @@ the decorated function.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pcapkit.utilities.decorators.beholder">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.decorators.</span></span><span class="sig-name descname"><span class="pre">beholder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/decorators.html#beholder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.decorators.beholder" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.decorators.</span></span><span class="sig-name descname"><span class="pre">beholder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/decorators.html#beholder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.decorators.beholder" title="Link to this definition">¶</a></dt>
 <dd><p>Behold extraction procedure.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -554,7 +554,7 @@ as <a class="reference internal" href="../protocols/misc/raw.html#pcapkit.protoc
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pcapkit.utilities.decorators.prepare">
-<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.decorators.</span></span><span class="sig-name descname"><span class="pre">prepare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/decorators.html#prepare"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.decorators.prepare" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">pcapkit.utilities.decorators.</span></span><span class="sig-name descname"><span class="pre">prepare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pcapkit/utilities/decorators.html#prepare"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.utilities.decorators.prepare" title="Link to this definition">¶</a></dt>
 <dd><p>Prepare schema packet data before unpacking.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -595,7 +595,7 @@ decorator function.</p>
 </div>
 </section>
 <section id="module-pcapkit.utilities.compat">
-<span id="version-compatibility"></span><h2>Version Compatibility<a class="headerlink" href="#module-pcapkit.utilities.compat" title="Link to this heading">#</a></h2>
+<span id="version-compatibility"></span><h2>Version Compatibility<a class="headerlink" href="#module-pcapkit.utilities.compat" title="Link to this heading">¶</a></h2>
 <p><a class="reference internal" href="../index.html#module-pcapkit" title="pcapkit"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pcapkit</span></code></a> further provides a compatibility layer for the
 following objects and functions:</p>
 <div class="table-wrapper docutils container">
@@ -715,7 +715,7 @@ following objects and functions:</p>
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=0b366733"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
