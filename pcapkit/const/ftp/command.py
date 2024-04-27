@@ -181,8 +181,8 @@ class Command(StrEnum):
     #: Rename From [:rfc:`959`]
     RNFR = 'RNFR', '<base>', 'Rename From', ('service execution', 'parameter setting'), 'mandatory to implement', ('RFC 959',)
 
-    #: Rename From [:rfc:`959`]
-    RNTO = 'RNTO', '<base>', 'Rename From', ('service execution',), 'mandatory to implement', ('RFC 959',)
+    #: Rename To [:rfc:`959`][RFC Errata 5748]
+    RNTO = 'RNTO', '<base>', 'Rename To', ('service execution',), 'mandatory to implement', ('RFC 959',)
 
     #: Site Parameters [:rfc:`959`][:rfc:`1123`]
     SITE = 'SITE', '<base>', 'Site Parameters', ('service execution',), 'mandatory to implement', ('RFC 959', 'RFC 1123')
