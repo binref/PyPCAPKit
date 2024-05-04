@@ -11,10 +11,10 @@
 <meta name="description" content="pcapkit.foundation.extraction contains Extractor only, which synthesises file I/O and protocol analysis, coordinates information exchange in all network layers, extracts parametres from a PCAP file." />
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Fragmented Packets Reassembly" href="reassembly/index.html" /><link rel="prev" title="Library Foundation" href="index.html" />
 
-    <!-- Generated with Sphinx 7.3.7 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.7 and Furo 2024.04.27 -->
         <title>Extractor for PCAP Files - PyPCAPKit</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=437aa6ec" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
     
@@ -124,6 +124,8 @@
 <label class="overlay toc-overlay" for="__toc">
   <div class="visually-hidden">Hide table of contents sidebar</div>
 </label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
 
 
@@ -355,7 +357,7 @@
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <article role="main">
+        <article role="main" id="furo-main-content">
           <section id="module-pcapkit.foundation.extraction">
 <span id="extractor-for-pcap-files"></span><h1>Extractor for PCAP Files<a class="headerlink" href="#module-pcapkit.foundation.extraction" title="Link to this heading">¶</a></h1>
 <p><a class="reference internal" href="#module-pcapkit.foundation.extraction" title="pcapkit.foundation.extraction"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pcapkit.foundation.extraction</span></code></a> contains
@@ -444,7 +446,7 @@ extracts parametres from a PCAP file.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="pcapkit.foundation.extraction.Extractor.frame">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../protocols/misc/pcap.html#pcapkit.protocols.misc.pcap.frame.Frame" title="pcapkit.protocols.misc.pcap.frame.Frame"><span class="pre">Frame</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="../protocols/misc/pcapng.html#pcapkit.protocols.misc.pcapng.PCAPNG" title="pcapkit.protocols.misc.pcapng.PCAPNG"><span class="pre">PCAPNG</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://scapy.readthedocs.io/en/latest/api/scapy.packet.html#scapy.packet.Packet" title="(in Scapy v2.5.0.dev321)"><span class="pre">Packet</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://dpkt.readthedocs.io/en/latest/api/api_auto.html#dpkt.dpkt.Packet" title="(in dpkt v1.9)"><span class="pre">Packet</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Packet</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#pcapkit.foundation.extraction.Extractor.frame" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../protocols/misc/pcap.html#pcapkit.protocols.misc.pcap.frame.Frame" title="pcapkit.protocols.misc.pcap.frame.Frame"><span class="pre">Frame</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="../protocols/misc/pcapng.html#pcapkit.protocols.misc.pcapng.PCAPNG" title="pcapkit.protocols.misc.pcapng.PCAPNG"><span class="pre">PCAPNG</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://scapy.readthedocs.io/en/latest/api/scapy.packet.html#scapy.packet.Packet" title="(in Scapy v2.6.0rc1.dev3)"><span class="pre">Packet</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://dpkt.readthedocs.io/en/latest/api/api_auto.html#dpkt.dpkt.Packet" title="(in dpkt v1.9)"><span class="pre">Packet</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Packet</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#pcapkit.foundation.extraction.Extractor.frame" title="Link to this definition">¶</a></dt>
 <dd><p>Extracted frames.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
@@ -812,10 +814,10 @@ until the EOF reached; then it calls <code class="xref py py-meth docutils liter
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=a2761355"></script>
+</div><script src="../../_static/documentation_options.js?v=0001e212"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../../_static/scripts/furo.js?v=4e2eecee"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     </body>

@@ -11,10 +11,10 @@
 <meta name="description" content="This module contains all constant enumerations of protocol type registry implementations. Available enumerations include:,, LINKTYPE, Link-Layer Header Type Values*,, ETHERTYPE, Ethertype IEEE 802 ..." />
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="PCAPNG Constant Enumerations" href="pcapng.html" /><link rel="prev" title="Constant Enumerations" href="index.html" />
 
-    <!-- Generated with Sphinx 7.3.7 and Furo 2024.01.29 -->
+    <!-- Generated with Sphinx 7.3.7 and Furo 2024.04.27 -->
         <title>Protocol Type Registry Constant Enumerations - PyPCAPKit</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=437aa6ec" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
     
@@ -124,6 +124,8 @@
 <label class="overlay toc-overlay" for="__toc">
   <div class="visually-hidden">Hide table of contents sidebar</div>
 </label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
 
 
@@ -355,7 +357,7 @@
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <article role="main">
+        <article role="main" id="furo-main-content">
           <section id="module-pcapkit.const.reg">
 <span id="protocol-type-registry-constant-enumerations"></span><h1>Protocol Type Registry Constant Enumerations<a class="headerlink" href="#module-pcapkit.const.reg" title="Link to this heading">¶</a></h1>
 <p>This module contains all constant enumerations of protocol type registry
@@ -442,7 +444,7 @@ Association draft standard ATA 878.2 is also used. See also RFC 1051 and RFC
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.SLIP">
 <span class="sig-name descname"><span class="pre">SLIP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.SLIP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_SLIP</span></code>] SLIP, encapsulated with a LINKTYPE_SLIP header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_SLIP</span></code>] SLIP, with a header giving packet direction</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -763,9 +765,7 @@ MAC frames.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LINUX_IRDA">
 <span class="sig-name descname"><span class="pre">LINUX_IRDA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">144</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LINUX_IRDA" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LINUX_IRDA</span></code>] Linux-IrDA packets, with a LINKTYPE_LINUX_IRDA
-header, with the payload for IrDA frames beginning with by the IrLAP header
-as defined by the IrDA Link Access Protocol specification.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LINUX_IRDA</span></code>] Linux-IrDA packets</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -972,10 +972,7 @@ ITU-T Recommendation G.7041/Y.1303.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LINUX_LAPD">
 <span class="sig-name descname"><span class="pre">LINUX_LAPD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">177</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LINUX_LAPD" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LINUX_LAPD</span></code>] Link Access Procedures on the D Channel (LAPD) frames,
-as specified by ITU-T Recommendation Q.920 and ITU-T Recommendation Q.921,
-captured via vISDN, with a LINKTYPE_LINUX_LAPD header, followed by the
-Q.921 frame, starting with the address field.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LINUX_LAPD</span></code>] Linux vISDN LAPD frame</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1213,17 +1210,16 @@ meaning “sent by this host” (DTE-&gt;DCE).</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IPMB_LINUX">
-<span class="sig-name descname"><span class="pre">IPMB_LINUX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">209</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IPMB_LINUX" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IPMB_LINUX</span></code>] IPMB over an I2C circuit, with a Linux-specific pseudo-
-header.</p>
+<dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.I2C_LINUX">
+<span class="sig-name descname"><span class="pre">I2C_LINUX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">209</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.I2C_LINUX" title="Link to this definition">¶</a></dt>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_I2C_LINUX</span></code>] Linux I2C packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.FLEXRAY">
 <span class="sig-name descname"><span class="pre">FLEXRAY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">210</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.FLEXRAY" title="Link to this definition">¶</a></dt>
 <dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FLEXRAY</span></code>] FlexRay automotive bus frames or symbols, preceded by a
-pseudo-header.</p>
+pseudo-header</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1237,7 +1233,7 @@ transport.</p>
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LIN">
 <span class="sig-name descname"><span class="pre">LIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">212</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LIN" title="Link to this definition">¶</a></dt>
 <dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LIN</span></code>] Local Interconnect Network (LIN) automotive bus, preceded by a
-pseudo-header.</p>
+pseudo-header</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1344,8 +1340,7 @@ example, SOFi2, which is K28.5 - D21.5 - D1.2 - D21.2, is represented as
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IPNET">
 <span class="sig-name descname"><span class="pre">IPNET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">226</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IPNET" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IPNET</span></code>] Solaris ipnet pseudo-header, followed by an IPv4 or IPv6
-datagram.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IPNET</span></code>] Solaris ipnet</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3968,10 +3963,10 @@ simple-multicast]</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=a2761355"></script>
+</div><script src="../../_static/documentation_options.js?v=0001e212"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../../_static/scripts/furo.js?v=4e2eecee"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     </body>
