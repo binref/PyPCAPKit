@@ -654,8 +654,8 @@ is.)</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IEEE802_11_PRISM">
 <span class="sig-name descname"><span class="pre">IEEE802_11_PRISM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">119</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IEEE802_11_PRISM" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PRISM_HEADER</span></code>] Prism monitor mode information followed by an 802.11
-header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PRISM_HEADER</span></code>] Prism monitor mode information, followed by an 802.11
+frame.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -675,8 +675,7 @@ header being the Network_Header as described in that RFC.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.SUNATM">
 <span class="sig-name descname"><span class="pre">SUNATM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">123</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.SUNATM" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_SUNATM</span></code>] ATM traffic, encapsulated as per the scheme used by SunATM
-devices.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_SUNATM</span></code>] ATM traffic captured from a SunATM device.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1029,7 +1028,7 @@ ITU-T Recommendation G.7041/Y.1303.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LINUX_LAPD">
 <span class="sig-name descname"><span class="pre">LINUX_LAPD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">177</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LINUX_LAPD" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LINUX_LAPD</span></code>] Linux vISDN LAPD frame</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LINUX_LAPD</span></code>] Linux vISDN LAPD frames</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1496,17 +1495,15 @@ with the 1.0.2 version, although newer versions are classified.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NETANALYZER">
 <span class="sig-name descname"><span class="pre">NETANALYZER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">240</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NETANALYZER" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER</span></code>] Pseudo-header for Hilscher Gesellschaft für
-Systemautomation mbH netANALYZER devices, followed by an Ethernet frame,
-beginning with the MAC header and ending with the FCS.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER</span></code>] Ethernet frames, preceded by a Hilscher netANALYZER
+pseudo-header.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NETANALYZER_TRANSPARENT">
 <span class="sig-name descname"><span class="pre">NETANALYZER_TRANSPARENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">241</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NETANALYZER_TRANSPARENT" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER_TRANSPARENT</span></code>] Pseudo-header for Hilscher Gesellschaft
-für Systemautomation mbH netANALYZER devices, followed by an Ethernet frame,
-beginning with the preamble, SFD, and MAC header, and ending with the FCS.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER_TRANSPARENT</span></code>] Ethernet frames, including the preamble
+and SFD, preceded by a Hilscher netANALYZER pseudo-header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1526,20 +1523,14 @@ by ISO 13818-1/ITU-T Recommendation H.222.0 (see table 2-2 of section
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NG40">
 <span class="sig-name descname"><span class="pre">NG40</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">244</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NG40" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NG40</span></code>] Pseudo-header for ng4T GmbH’s UMTS Iub/Iur-over-ATM and
-Iub/Iur-over-IP format as used by their ng40 protocol tester, followed by
-frames for the Frame Protocol as specified by 3GPP TS 25.427 for dedicated
-channels and 3GPP TS 25.435 for common/shared channels in the case of ATM
-AAL2 or UDP traffic, by SSCOP packets as specified by ITU-T Recommendation
-Q.2110 for ATM AAL5 traffic, and by NBAP packets for SCTP traffic.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NG40</span></code>] Frames from ng4T GmbH’s ng40 protocol tester.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NFC_LLCP">
 <span class="sig-name descname"><span class="pre">NFC_LLCP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">245</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NFC_LLCP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NFC_LLCP</span></code>] Pseudo-header for NFC LLCP packet captures, followed by
-frame data for the LLCP Protocol as specified by the Logical Link Control
-Protocol Technical Specification.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NFC_LLCP</span></code>] NFC Logical Link Control Protocol frames, with a pseudo-
+header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1572,9 +1563,8 @@ protocols such as IPv4 or IPv6.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.RTAC_SERIAL">
 <span class="sig-name descname"><span class="pre">RTAC_SERIAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">250</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.RTAC_SERIAL" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_RTAC_SERIAL</span></code>] Serial-line packet header for the Schweitzer
-Engineering Laboratories “RTAC” product, followed by a payload for one of a
-number of industrial control protocols.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_RTAC_SERIAL</span></code>] Serial-line packets from the Schweitzer Engineering
+Laboratories “RTAC” product.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1668,9 +1658,8 @@ Recommendation G.9959, with some MAC layer fields moved.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.WATTSTOPPER_DLM">
 <span class="sig-name descname"><span class="pre">WATTSTOPPER_DLM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">263</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.WATTSTOPPER_DLM" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_WATTSTOPPER_DLM</span></code>] Formats for WattStopper Digital Lighting
-Management (DLM) and Legrand Nitoo Open protocol common packet structure
-captures.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_WATTSTOPPER_DLM</span></code>] WattStopper Digital Lighting Management (DLM) and
+Legrand Nitoo Open protocol packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1685,15 +1674,14 @@ for ISO14443 specification.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.RDS">
 <span class="sig-name descname"><span class="pre">RDS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">265</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.RDS" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_RDS</span></code>] Radio data system (RDS) groups, as per IEC 62106, encapsulated
-in this form.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_RDS</span></code>] IEC 62106 Radio data system (RDS) groups.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.USB_DARWIN">
 <span class="sig-name descname"><span class="pre">USB_DARWIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">266</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.USB_DARWIN" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_DARWIN</span></code>] USB packets, beginning with a Darwin (macOS, etc.) USB
-header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_DARWIN</span></code>] USB packets captured on a Darwin-based operating system
+(macOS, etc.).</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1737,7 +1725,7 @@ in VMware and KVM hypervisors.</p>
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NORDIC_BLE">
 <span class="sig-name descname"><span class="pre">NORDIC_BLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">272</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NORDIC_BLE" title="Link to this definition">¶</a></dt>
 <dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NORDIC_BLE</span></code>] Messages to and from a Nordic Semiconductor nRF Sniffer
-for Bluetooth LE packets, beginning with a pseudo-header.</p>
+for Bluetooth LE packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1757,8 +1745,7 @@ header giving metadata about the packet.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DISPLAYPORT_AUX">
 <span class="sig-name descname"><span class="pre">DISPLAYPORT_AUX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">275</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DISPLAYPORT_AUX" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DISPLAYPORT_AUX</span></code>] DisplayPort AUX channel monitoring data as
-specified by VESA DisplayPort (DP) Standard preceded by a pseudo-header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DISPLAYPORT_AUX</span></code>] DisplayPort AUX channel monitoring messages.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1776,7 +1763,7 @@ specified by VESA DisplayPort (DP) Standard preceded by a pseudo-header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.OPENVIZSLA">
 <span class="sig-name descname"><span class="pre">OPENVIZSLA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">278</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.OPENVIZSLA" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_OPENVIZSLA</span></code>] Openvizsla FPGA-based USB sniffer.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_OPENVIZSLA</span></code>] OpenVizsla FPGA-based USB sniffer frames.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1800,15 +1787,14 @@ dispatch tracer, in the the graph dispatcher trace format.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DSA_TAG_BRCM">
 <span class="sig-name descname"><span class="pre">DSA_TAG_BRCM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">281</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DSA_TAG_BRCM" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DSA_TAG_BRCM</span></code>] Ethernet frames, with a switch tag inserted between
-the source address field and the type/length field in the Ethernet header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DSA_TAG_BRCM</span></code>] Ethernet frames, with a Broadcom switch tag inserted.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DSA_TAG_BRCM_PREPEND">
 <span class="sig-name descname"><span class="pre">DSA_TAG_BRCM_PREPEND</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">282</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DSA_TAG_BRCM_PREPEND" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DSA_TAG_BRCM_PREPEND</span></code>] Ethernet frames, with a switch tag inserted
-before the destination address in the Ethernet header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DSA_TAG_BRCM_PREPEND</span></code>] Ethernet frames, with a Broadcom switch tag
+prepended.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1821,16 +1807,15 @@ pseudo-header containing TLVs with metadata preceding the 802.15.4 header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DSA_TAG_DSA">
 <span class="sig-name descname"><span class="pre">DSA_TAG_DSA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">284</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DSA_TAG_DSA" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DSA_TAG_DSA</span></code>] Ethernet frames, with a switch tag inserted between
-the source address field and the type/length field in the Ethernet header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DSA_TAG_DSA</span></code>] Ethernet frames, with a Marvell DSA switch tag
+inserted.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DSA_TAG_EDSA">
 <span class="sig-name descname"><span class="pre">DSA_TAG_EDSA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">285</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DSA_TAG_EDSA" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DSA_TAG_EDSA</span></code>] Ethernet frames, with a programmable Ethernet type
-switch tag inserted between the source address field and the type/length
-field in the Ethernet header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DSA_TAG_EDSA</span></code>] Ethernet frames, with a Marvell EDSA switch tag
+inserted.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1869,8 +1854,7 @@ standards page, beginning with a Base Header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ETW">
 <span class="sig-name descname"><span class="pre">ETW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">290</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ETW" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ETW</span></code>] Event Tracing for Windows messages, beginning with a pseudo-
-header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ETW</span></code>] Event Tracing for Windows messages.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -4026,7 +4010,7 @@ simple-multicast]</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=7dadd88f"></script>
+</div><script src="../../_static/documentation_options.js?v=d4edace9"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=4e2eecee"></script>
