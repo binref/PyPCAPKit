@@ -10,7 +10,7 @@ emoji==2.12.1
 html5lib==1.1
 idna==3.7
 lxml==5.2.2
-packaging==24.0
+packaging==24.1
 pathlib2==2.3.7.post1
 pyshark==0.6
 pysocks==1.7.1
