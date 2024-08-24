@@ -227,8 +227,8 @@ class StatusCode(IntEnum):
     #: Unassigned
     UNASSIGNED_509 = 509, 'Unassigned'
 
-    #: Not Extended (OBSOLETED) [:rfc:`2774`][status-change-http-experiments-to-
-    #: historic]
+    #: Not Extended (OBSOLETED) [:rfc:`2774`][Status change of HTTP experiments to
+    #: Historic]
     NOT_EXTENDED = 510, 'Not Extended (OBSOLETED)'
 
     #: Network Authentication Required [:rfc:`6585`]

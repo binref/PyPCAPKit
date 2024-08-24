@@ -136,38 +136,28 @@ class ReturnCode(IntEnum):
     #: data needs to be exchanged.
     CODE_235 = 235, 'Server accepts the security data given by the client; no further security data needs to be exchanged.'
 
-    #: Requested file action okay, completed.
-    CODE_250 = 250, 'Requested file action okay, completed.'
+    #: Requested file action was okay, completed.
+    CODE_250 = 250, 'Requested file action was okay, completed.'
 
-    #: "PATHNAME" created.
-    CODE_257 = 257, '"PATHNAME" created.'
+    #: User name okay, password okay.
+    CODE_331 = 331, 'User name okay, password okay.'
 
-    #: User name okay, need password.
-    CODE_331 = 331, 'User name okay, need password.'
-
-    #: Need account for login.
-    CODE_332 = 332, 'Need account for login.'
+    #: No need account for login.
+    CODE_332 = 332, 'No need account for login.'
 
     #: Server accepts the security mechanism specified by the client; some security
     #: data needs to be exchanged.
     CODE_334 = 334, 'Server accepts the security mechanism specified by the client; some security data needs to be exchanged.'
 
-    #: Server accepts the security data given by the client; more security data
-    #: needs to be exchanged.
-    CODE_335 = 335, 'Server accepts the security data given by the client; more security data needs to be exchanged.'
+    #: Username okay, password okay. Challenge is ". . . . ".
+    CODE_336 = 336, 'Username okay, password okay. Challenge is ". . . . ".'
 
-    #: Username okay, need password. Challenge is ". . . . ".
-    CODE_336 = 336, 'Username okay, need password. Challenge is ". . . . ".'
+    #: Service available, closing control connection. This may be a reply to any
+    #: command if the service knows it must shut down.
+    CODE_421 = 421, 'Service available, closing control connection. This may be a reply to any command if the service knows it must shut down.'
 
-    #: Requested file action pending further information
-    CODE_350 = 350, 'Requested file action pending further information'
-
-    #: Service not available, closing control connection. This may be a reply to
-    #: any command if the service knows it must shut down.
-    CODE_421 = 421, 'Service not available, closing control connection. This may be a reply to any command if the service knows it must shut down.'
-
-    #: Can't open data connection.
-    CODE_425 = 425, "Can't open data connection."
+    #: open data connection.
+    CODE_425 = 425, 'open data connection.'
 
     #: Connection closed; transfer aborted.
     CODE_426 = 426, 'Connection closed; transfer aborted.'
