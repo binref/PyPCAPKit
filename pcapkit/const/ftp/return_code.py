@@ -156,8 +156,8 @@ class ReturnCode(IntEnum):
     #: command if the service knows it must shut down.
     CODE_421 = 421, 'Service available, closing control connection. This may be a reply to any command if the service knows it must shut down.'
 
-    #: open data connection.
-    CODE_425 = 425, 'open data connection.'
+    #: Can't open data connection.
+    CODE_425 = 425, "Can't open data connection."
 
     #: Connection closed; transfer aborted.
     CODE_426 = 426, 'Connection closed; transfer aborted.'
