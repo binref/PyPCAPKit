@@ -1087,15 +1087,7 @@ Bluetooth Core Specification.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.USB_LINUX">
 <span class="sig-name descname"><span class="pre">USB_LINUX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">189</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.USB_LINUX" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_LINUX</span></code>] USB packets, beginning with a Linux USB header, as
-specified by the struct usbmon_packet in the Documentation/usb/usbmon.txt
-file in the Linux source tree. Only the first 48 bytes of that header are
-present. All fields in the header are in host byte order. When performing a
-live capture, the host byte order is the byte order of the machine on that
-the packets are captured. When reading a pcap file, the byte order is the
-byte order for the file, as specified by the file’s magic number; when
-reading a pcapng file, the byte order is the byte order for the section of
-the pcapng file, as specified by the Section Header Block.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_LINUX</span></code>] USB packets, beginning with a Linux USB header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1324,17 +1316,8 @@ bit) preceding the MAC-layer data (starting with the frame control field).</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.USB_LINUX_MMAPPED">
 <span class="sig-name descname"><span class="pre">USB_LINUX_MMAPPED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">220</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.USB_LINUX_MMAPPED" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_LINUX_MMAPPED</span></code>] USB packets, beginning with a Linux USB header,
-as specified by the struct usbmon_packet in the
-Documentation/usb/usbmon.txt file in the Linux source tree. All 64 bytes of
-the header are present. All fields in the header are in host byte order.
-When performing a live capture, the host byte order is the byte order of the
-machine on that the packets are captured. When reading a pcap file, the byte
-order is the byte order for the file, as specified by the file’s magic
-number; when reading a pcapng file, the byte order is the byte order for the
-section of the pcapng file, as specified by the Section Header Block. For
-isochronous transfers, the ndesc field specifies the number of isochronous
-descriptors that follow.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_LINUX_MMAPPED</span></code>] USB packets, beginning with an memory-mapped
+Linux USB header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3996,7 +3979,7 @@ simple-multicast-03]</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=f964c67d"></script>
+</div><script src="../../_static/documentation_options.js?v=114787cd"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
