@@ -489,11 +489,7 @@ DLT_ name is historical.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.PPP">
 <span class="sig-name descname"><span class="pre">PPP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.PPP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP</span></code>] PPP, as per RFC 1661 and RFC 1662; if the first 2 bytes are
-0xff and 0x03, it’s PPP in HDLC-like framing, with the PPP header following
-those two bytes, otherwise it’s PPP without framing, and the packet begins
-with the PPP header. The data in the frame is not octet-stuffed or bit-
-stuffed.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP</span></code>] PPP.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -511,11 +507,7 @@ stuffed.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.PPP_HDLC">
 <span class="sig-name descname"><span class="pre">PPP_HDLC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.PPP_HDLC" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP_SERIAL</span></code>] PPP in HDLC-like framing, as per RFC 1662, or Cisco PPP
-with HDLC framing, as per section 4.3.1 of RFC 1547; the first byte will be
-0xFF for PPP in HDLC-like framing, and will be 0x0F or 0x8F for Cisco PPP
-with HDLC framing. The data in the frame is not octet-stuffed or bit-
-stuffed.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP_SERIAL</span></code>] PPP in HDLC-like framing.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -549,8 +541,7 @@ header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.C_HDLC">
 <span class="sig-name descname"><span class="pre">C_HDLC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">104</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.C_HDLC" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_C_HDLC</span></code>] Cisco PPP with HDLC framing, as per section 4.3.1 of RFC
-1547.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_C_HDLC</span></code>] Cisco PPP with HDLC framing.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -568,9 +559,7 @@ header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.FRELAY">
 <span class="sig-name descname"><span class="pre">FRELAY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">107</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.FRELAY" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FRELAY</span></code>] Frame Relay LAPF frames, beginning with a ITU-T
-Recommendation Q.922 LAPF header starting with the address field, and
-without an FCS at the end of the frame.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FRELAY</span></code>] Frame Relay LAPF.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -650,8 +639,7 @@ link-layer header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IP_OVER_FC">
 <span class="sig-name descname"><span class="pre">IP_OVER_FC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">122</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IP_OVER_FC" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IP_OVER_FC</span></code>] RFC 2625 IP-over-Fibre Channel, with the link-layer
-header being the Network_Header as described in that RFC.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IP_OVER_FC</span></code>] IP and ATM over Fibre Channel, as per RFC 4338.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1037,8 +1025,7 @@ frames prepended with meta-information.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.MFR">
 <span class="sig-name descname"><span class="pre">MFR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">182</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.MFR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MFR</span></code>] FRF.16.1 Multi-Link Frame Relay frames, beginning with an
-FRF.12 Interface fragmentation format fragmentation header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MFR</span></code>] FRF.16.1 Multi-Link Frame Relay frames.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1070,12 +1057,7 @@ refer to the A653-1 standard for more information.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.BLUETOOTH_HCI_H4">
 <span class="sig-name descname"><span class="pre">BLUETOOTH_HCI_H4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">187</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.BLUETOOTH_HCI_H4" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_HCI_H4</span></code>] Bluetooth HCI UART transport layer; the frame
-contains an HCI packet indicator byte, as specified by the UART Transport
-Layer portion of the most recent Bluetooth Core specification, followed by
-an HCI packet of the specified packet type, as specified by the Host
-Controller Interface Functional Specification portion of the most recent
-Bluetooth Core Specification.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_HCI_H4</span></code>] Bluetooth HCI UART Transport Layer packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1106,9 +1088,7 @@ is done by Linux drivers.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.PPI">
 <span class="sig-name descname"><span class="pre">PPI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">192</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.PPI" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPI</span></code>] Per-Packet Information information, as specified by the Per-
-Packet Information Header Specification, followed by a packet with the
-LINKTYPE_ value specified by the pph_dlt field of that header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPI</span></code>] Per-Packet Information header precending packet data.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1127,8 +1107,7 @@ radiotap header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IEEE802_15_4_WITHFCS">
 <span class="sig-name descname"><span class="pre">IEEE802_15_4_WITHFCS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">195</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IEEE802_15_4_WITHFCS" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IEEE802_15_4_WITHFCS</span></code>] IEEE 802.15.4 Low-Rate Wireless Networks,
-with each packet having the FCS at the end of the frame.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IEEE802_15_4_WITHFCS</span></code>] IEEE 802.15.4 packets with FCS.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1167,15 +1146,8 @@ followed by the I2C slave address, followed by the netFn and LUN, etc…</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.BLUETOOTH_HCI_H4_WITH_PHDR">
 <span class="sig-name descname"><span class="pre">BLUETOOTH_HCI_H4_WITH_PHDR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">201</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.BLUETOOTH_HCI_H4_WITH_PHDR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_HCI_H4_WITH_PHDR</span></code>] Bluetooth HCI UART transport layer; the
-frame contains a 4-byte direction field, in network byte order (big-endian),
-the low-order bit of which is set if the frame was sent from the host to the
-controller and clear if the frame was received by the host from the
-controller, followed by an HCI packet indicator byte, as specified by the
-UART Transport Layer portion of the most recent Bluetooth Core
-specification, followed by an HCI packet of the specified packet type, as
-specified by the Host Controller Interface Functional Specification portion
-of the most recent Bluetooth Core Specification.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_HCI_H4_WITH_PHDR</span></code>] Bluetooth HCI UART Transport Layer
+packets with a direction pseudo-header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1188,48 +1160,32 @@ type indicator.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LAPD">
 <span class="sig-name descname"><span class="pre">LAPD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">203</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LAPD" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LAPD</span></code>] Link Access Procedures on the D Channel (LAPD) frames, as
-specified by ITU-T Recommendation Q.920 and ITU-T Recommendation Q.921,
-starting with the address field, with no pseudo-header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LAPD</span></code>] Q.921 LAPD frames.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.PPP_WITH_DIR">
 <span class="sig-name descname"><span class="pre">PPP_WITH_DIR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">204</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.PPP_WITH_DIR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP_WITH_DIR</span></code>] PPP, as per RFC 1661 and RFC 1662, preceded with a
-one-byte pseudo-header with a zero value meaning “received by this host” and
-a non-zero value meaning “sent by this host”; if the first 2 bytes are 0xff
-and 0x03, it’s PPP in HDLC-like framing, with the PPP header following those
-two bytes, otherwise it’s PPP without framing, and the packet begins with
-the PPP header. The data in the frame is not octet-stuffed or bit-stuffed.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP_WITH_DIR</span></code>] PPP, with a direction header.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.C_HDLC_WITH_DIR">
 <span class="sig-name descname"><span class="pre">C_HDLC_WITH_DIR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">205</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.C_HDLC_WITH_DIR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_C_HDLC_WITH_DIR</span></code>] Cisco PPP with HDLC framing, as per section 4.3.1
-of RFC 1547, preceded with a one-byte pseudo-header with a zero value
-meaning “received by this host” and a non-zero value meaning “sent by this
-host”.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_C_HDLC_WITH_DIR</span></code>] Cisco PPP with HDLC framing, with a direction
+header.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.FRELAY_WITH_DIR">
 <span class="sig-name descname"><span class="pre">FRELAY_WITH_DIR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">206</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.FRELAY_WITH_DIR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FRELAY_WITH_DIR</span></code>] Frame Relay LAPF frames, beginning with a one-byte
-pseudo-header with a zero value meaning “received by this host” (DCE⇒DTE)
-and a non-zero value meaning “sent by this host” (DTE⇒DCE), followed by an
-ITU-T Recommendation Q.922 LAPF header starting with the address field, and
-without an FCS at the end of the frame.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FRELAY_WITH_DIR</span></code>] Frame Relay LAPF, with a direction header.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LAPB_WITH_DIR">
 <span class="sig-name descname"><span class="pre">LAPB_WITH_DIR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">207</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LAPB_WITH_DIR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LAPB_WITH_DIR</span></code>] Link Access Procedure, Balanced (LAPB), as specified
-by ITU-T Recommendation X.25, preceded with a one-byte pseudo-header with a
-zero value meaning “received by this host” (DCE⇒DTE) and a non-zero value
-meaning “sent by this host” (DTE⇒DCE).</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LAPB_WITH_DIR</span></code>] X.25 LAPB, with a direction header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1261,8 +1217,8 @@ transport.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LIN">
 <span class="sig-name descname"><span class="pre">LIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">212</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LIN" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LIN</span></code>] Local Interconnect Network (LIN) automotive bus, preceded by a
-pseudo-header</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LIN</span></code>] Local Interconnect Network (LIN) automotive bus, with a
+metadata header</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1282,11 +1238,7 @@ logger family.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IEEE802_15_4_NONASK_PHY">
 <span class="sig-name descname"><span class="pre">IEEE802_15_4_NONASK_PHY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">215</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IEEE802_15_4_NONASK_PHY" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IEEE802_15_4_NONASK_PHY</span></code>] IEEE 802.15.4 Low-Rate Wireless Networks,
-with each packet having the FCS at the end of the frame, and with the PHY-
-level data for the O-QPSK, BPSK, GFSK, MSK, and RCC DSS BPSK PHYs (4 octets
-of 0 as preamble, one octet of SFD, one octet of frame length + reserved
-bit) preceding the MAC-layer data (starting with the frame control field).</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IEEE802_15_4_NONASK_PHY</span></code>] IEEE 802.15.4 packets with PHY header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1316,8 +1268,8 @@ bit) preceding the MAC-layer data (starting with the frame control field).</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.USB_LINUX_MMAPPED">
 <span class="sig-name descname"><span class="pre">USB_LINUX_MMAPPED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">220</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.USB_LINUX_MMAPPED" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_LINUX_MMAPPED</span></code>] USB packets, beginning with an memory-mapped
-Linux USB header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_LINUX_MMAPPED</span></code>] USB packets, beginning with an extended Linux
+USB header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1342,19 +1294,13 @@ the HART Communication Foundation (IEC/PAS 62591).</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.FC_2">
 <span class="sig-name descname"><span class="pre">FC_2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">224</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.FC_2" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FC_2</span></code>] Fibre Channel FC-2 frames, beginning with a Frame_Header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FC_2</span></code>] Fibre Channel FC-2 frames.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.FC_2_WITH_FRAME_DELIMS">
 <span class="sig-name descname"><span class="pre">FC_2_WITH_FRAME_DELIMS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">225</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.FC_2_WITH_FRAME_DELIMS" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FC_2_WITH_FRAME_DELIMS</span></code>] Fibre Channel FC-2 frames, beginning an
-encoding of the SOF, followed by a Frame_Header, and ending with an
-encoding of the SOF. The encodings represent the frame delimiters as 4-byte
-sequences representing the corresponding ordered sets, with K28.5
-represented as 0xBC, and the D symbols as the corresponding byte values; for
-example, SOFi2, which is K28.5 - D21.5 - D1.2 - D21.2, is represented as
-0xBC 0xB5 0x55 0x55.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_FC_2_WITH_FRAME_DELIMS</span></code>] Fibre Channel FC-2 frames with SOF and EOF.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1366,8 +1312,8 @@ example, SOFi2, which is K28.5 - D21.5 - D1.2 - D21.2, is represented as
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.CAN_SOCKETCAN">
 <span class="sig-name descname"><span class="pre">CAN_SOCKETCAN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">227</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.CAN_SOCKETCAN" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_CAN_SOCKETCAN</span></code>] CAN (Controller Area Network) frames, with a pseudo-
-header followed by the frame payload.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_CAN_SOCKETCAN</span></code>] Controller Area Network (CAN) frames, with a
+metadata header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1385,16 +1331,13 @@ header followed by the frame payload.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IEEE802_15_4_NOFCS">
 <span class="sig-name descname"><span class="pre">IEEE802_15_4_NOFCS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">230</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IEEE802_15_4_NOFCS" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IEEE802_15_4_NOFCS</span></code>] IEEE 802.15.4 Low-Rate Wireless Network,
-without the FCS at the end of the frame.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IEEE802_15_4_NOFCS</span></code>] IEEE 802.15.4 packets without FCS.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DBUS">
 <span class="sig-name descname"><span class="pre">DBUS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">231</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DBUS" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DBUS</span></code>] Raw D-Bus messages, starting with the endianness flag,
-followed by the message type, etc., but without the authentication handshake
-before the message sequence.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DBUS</span></code>] Raw D-Bus messages.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1425,17 +1368,13 @@ PCAP format for DVB-CI specification.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.MUX27010">
 <span class="sig-name descname"><span class="pre">MUX27010</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">236</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.MUX27010" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MUX27010</span></code>] Variant of 3GPP TS 27.010 multiplexing protocol (similar
-to, but not the same as, 27.010).</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MUX27010</span></code>] Variant of 3GPP TS 27.010 multiplexing protocol.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.STANAG_5066_D_PDU">
 <span class="sig-name descname"><span class="pre">STANAG_5066_D_PDU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">237</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.STANAG_5066_D_PDU" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_STANAG_5066_D_PDU</span></code>] D_PDUs as described by NATO standard STANAG
-5066, starting with the synchronization sequence, and including both header
-and data CRCs. The current version of STANAG 5066 is backwards-compatible
-with the 1.0.2 version, although newer versions are classified.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_STANAG_5066_D_PDU</span></code>] STANAG 5066 D_PDUs.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1453,15 +1392,15 @@ with the 1.0.2 version, although newer versions are classified.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NETANALYZER">
 <span class="sig-name descname"><span class="pre">NETANALYZER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">240</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NETANALYZER" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER</span></code>] Ethernet frames, preceded by a Hilscher netANALYZER
-pseudo-header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER</span></code>] Ethernet frames with Hilscher netANALYZER pseudo-
+header.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.NETANALYZER_TRANSPARENT">
 <span class="sig-name descname"><span class="pre">NETANALYZER_TRANSPARENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">241</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.NETANALYZER_TRANSPARENT" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER_TRANSPARENT</span></code>] Ethernet frames, including the preamble
-and SFD, preceded by a Hilscher netANALYZER pseudo-header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_NETANALYZER_TRANSPARENT</span></code>] Ethernet frames with netANALYZER pseudo-
+header, preamble and SFD, preceded by a Hilscher.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1551,8 +1490,7 @@ stored with each packet.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.BLUETOOTH_LINUX_MONITOR">
 <span class="sig-name descname"><span class="pre">BLUETOOTH_LINUX_MONITOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">254</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.BLUETOOTH_LINUX_MONITOR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_LINUX_MONITOR</span></code>] Bluetooth Linux Monitor encapsulation of
-traffic for the BlueZ stack.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_LINUX_MONITOR</span></code>] Bluetooth Linux Monitor.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1602,15 +1540,13 @@ packets in this format must match the time stamps in the Trace Data Blocks.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ZWAVE_R1_R2">
 <span class="sig-name descname"><span class="pre">ZWAVE_R1_R2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">261</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ZWAVE_R1_R2" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ZWAVE_R1_R2</span></code>] Z-Wave RF profile R1 and R2 packets, as specified by
-ITU-T Recommendation G.9959, with some MAC layer fields moved.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ZWAVE_R1_R2</span></code>] Z-Wave RF profile R1 and R2 packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ZWAVE_R3">
 <span class="sig-name descname"><span class="pre">ZWAVE_R3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">262</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ZWAVE_R3" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ZWAVE_R3</span></code>] Z-Wave RF profile R3 packets, as specified by ITU-T
-Recommendation G.9959, with some MAC layer fields moved.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ZWAVE_R3</span></code>] Z-Wave RF profile R3 packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1668,8 +1604,7 @@ payload.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LORATAP">
 <span class="sig-name descname"><span class="pre">LORATAP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">270</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LORATAP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LORATAP</span></code>] LoRaTap pseudo-header, followed by the payload, which is
-typically the PHYPayload from the LoRaWan specification.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LORATAP</span></code>] LoRaWan packets with a LoRaTap pseudo-header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1758,8 +1693,8 @@ prepended.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IEEE802_15_4_TAP">
 <span class="sig-name descname"><span class="pre">IEEE802_15_4_TAP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">283</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IEEE802_15_4_TAP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IEEE802_15_4_TAP</span></code>] IEEE 802.15.4 Low-Rate Wireless Networks, with a
-pseudo-header containing TLVs with metadata preceding the 802.15.4 header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IEEE802_15_4_TAP</span></code>] IEEE 802.15.4 packets, with a pseudo-header
+containing TLVs with metadata preceding the 802.15.4 header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1862,8 +1797,7 @@ document.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ZWAVE_TAP">
 <span class="sig-name descname"><span class="pre">ZWAVE_TAP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">297</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ZWAVE_TAP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ZWAVE_TAP</span></code>] Z-Wave packets, as specified by ITU-T Recommendation
-G.9959, with a TAP meta-data header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ZWAVE_TAP</span></code>] Z-Wave packets, with a metadata header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1882,19 +1816,13 @@ described in the specification.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.MDB">
 <span class="sig-name descname"><span class="pre">MDB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">300</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.MDB" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MDB</span></code>] MDB (Multi-Drop Bus) protocol between a vending machine
-controller and peripherals inside the vending machine, with the message
-format specified by the PCAP format for MDB specification.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MDB</span></code>] MDB (Multi-Drop Bus) vending machine protocol.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DECT_NR">
 <span class="sig-name descname"><span class="pre">DECT_NR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">301</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DECT_NR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DECT_NR</span></code>] DECT-2020 New Radio (NR) MAC layer specified in ETSI TS
-103 636-4. The Physical Header Field is always encoded using 80 bits (10
-bytes). Broadcast transmissions using 40 bits (5 bytes) is padded with 40
-zero bits (5 bytes). When padding is used the Receiver Identity value 0x0000
-(reserved address) is used to detect broadcast transmissions.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DECT_NR</span></code>] DECT-2020 New Radio (NR) MAC layer.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -3979,7 +3907,7 @@ simple-multicast-03]</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=114787cd"></script>
+</div><script src="../../_static/documentation_options.js?v=b807f3ab"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
