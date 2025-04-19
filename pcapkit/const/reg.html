@@ -452,7 +452,7 @@ in the DLT_ name is historical.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.AX25">
 <span class="sig-name descname"><span class="pre">AX25</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.AX25" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_AX25</span></code>] AX.25 packet, with nothing preceding it.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_AX25</span></code>] AX.25 layer 2 packets,</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -526,8 +526,7 @@ DLT_ name is historical.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ATM_RFC1483">
 <span class="sig-name descname"><span class="pre">ATM_RFC1483</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ATM_RFC1483" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ATM_RFC1483</span></code>] RFC 1483 LLC/SNAP-encapsulated ATM; the packet begins
-with an ISO 8802-2 (formerly known as IEEE 802.2) LLC header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ATM_RFC1483</span></code>] LLC/SNAP-encapsulated ATM</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -589,9 +588,7 @@ header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.LTALK">
 <span class="sig-name descname"><span class="pre">LTALK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">114</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.LTALK" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LTALK</span></code>] Apple LocalTalk; the packet begins with an AppleTalk
-LocalTalk Link Access Protocol header, as described in chapter 1 of Inside
-AppleTalk, Second Edition.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_LTALK</span></code>] Apple LocalTalk packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -745,15 +742,13 @@ encapsulation.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.MTP2_WITH_PHDR">
 <span class="sig-name descname"><span class="pre">MTP2_WITH_PHDR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">139</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.MTP2_WITH_PHDR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MTP2_WITH_PHDR</span></code>] Signaling System 7 Message Transfer Part Level 2,
-as specified by ITU-T Recommendation Q.703, preceded by a pseudo-header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MTP2_WITH_PHDR</span></code>] SS7 MTP2 packets, with a pseudo-header.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.MTP2">
 <span class="sig-name descname"><span class="pre">MTP2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">140</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.MTP2" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MTP2</span></code>] Signaling System 7 Message Transfer Part Level 2, as
-specified by ITU-T Recommendation Q.703.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MTP2</span></code>] SS7 MTP2 packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1088,7 +1083,7 @@ is done by Linux drivers.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.PPI">
 <span class="sig-name descname"><span class="pre">PPI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">192</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.PPI" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPI</span></code>] Per-Packet Information header precending packet data.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPI</span></code>] Per-Packet Information header preceding packet data.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1153,8 +1148,7 @@ packets with a direction pseudo-header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.AX25_KISS">
 <span class="sig-name descname"><span class="pre">AX25_KISS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">202</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.AX25_KISS" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_AX25_KISS</span></code>] AX.25 packet, with a 1-byte KISS header containing a
-type indicator.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_AX25_KISS</span></code>] KISS frames between a host and an AX.25 TNC.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1412,9 +1406,7 @@ header, preamble and SFD, preceded by a Hilscher.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.MPEG_2_TS">
 <span class="sig-name descname"><span class="pre">MPEG_2_TS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">243</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.MPEG_2_TS" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MPEG_2_TS</span></code>] MPEG-2 Transport Stream transport packets, as specified
-by ISO 13818-1/ITU-T Recommendation H.222.0 (see table 2-2 of section
-2.4.3.2 “Transport Stream packet layer”).</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MPEG_2_TS</span></code>] MPEG-2 Transport Stream transport packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1439,9 +1431,7 @@ header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.INFINIBAND">
 <span class="sig-name descname"><span class="pre">INFINIBAND</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">247</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.INFINIBAND" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_INFINIBAND</span></code>] Raw InfiniBand frames, starting with the Local Routing
-Header, as specified in Chapter 5 “Data packet format” of InfiniBand™
-Architecture Specification Release 1.2.1 Volume 1 - General Specifications.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_INFINIBAND</span></code>] InfiniBand data packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1467,10 +1457,7 @@ Laboratories “RTAC” product.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.BLUETOOTH_LE_LL">
 <span class="sig-name descname"><span class="pre">BLUETOOTH_LE_LL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">251</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.BLUETOOTH_LE_LL" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_LE_LL</span></code>] Bluetooth Low Energy air interface Link Layer
-packets, in the format described in section 2.1 “PACKET FORMAT” of volume 6
-of the Bluetooth Specification Version 4.0 (see PDF page 2200), but without
-the Preamble.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_LE_LL</span></code>] Bluetooth Low Energy link-layer packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1503,15 +1490,14 @@ baseband packets.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.BLUETOOTH_LE_LL_WITH_PHDR">
 <span class="sig-name descname"><span class="pre">BLUETOOTH_LE_LL_WITH_PHDR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">256</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.BLUETOOTH_LE_LL_WITH_PHDR" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_LE_LL_WITH_PHDR</span></code>] Bluetooth Low Energy link-layer packets.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BLUETOOTH_LE_LL_WITH_PHDR</span></code>] Bluetooth Low Energy link-layer packets,
+with a pseudo-header.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.PROFIBUS_DL">
 <span class="sig-name descname"><span class="pre">PROFIBUS_DL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">257</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.PROFIBUS_DL" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PROFIBUS_DL</span></code>] PROFIBUS data link layer packets, as specified by IEC
-standard 61158-4-3, beginning with the start delimiter, ending with the end
-delimiter, and including all octets between them.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PROFIBUS_DL</span></code>] PROFIBUS data link layer packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1523,18 +1509,14 @@ delimiter, and including all octets between them.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.EPON">
 <span class="sig-name descname"><span class="pre">EPON</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">259</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.EPON" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_EPON</span></code>] Ethernet-over-passive-optical-network packets, starting with
-the last 6 octets of the modified preamble as specified by 65.1.3.2
-“Transmit” in Clause 65 of Section 5 of IEEE 802.3, followed immediately by
-an Ethernet frame.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_EPON</span></code>] Ethernet-over-passive-optical-network packets, including
+preamble octets.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IPMI_HPM_2">
 <span class="sig-name descname"><span class="pre">IPMI_HPM_2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">260</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IPMI_HPM_2" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IPMI_HPM_2</span></code>] IPMI trace packets, as specified by Table 3-20 “Trace
-Data Block Format” in the PICMG HPM.2 specification. The time stamps for
-packets in this format must match the time stamps in the Trace Data Blocks.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IPMI_HPM_2</span></code>] IPMI HPM.2 trace packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1588,11 +1570,7 @@ used in OpenBSD switch interface monitoring.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.SDLC">
 <span class="sig-name descname"><span class="pre">SDLC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">268</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.SDLC" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_SDLC</span></code>] SDLC packets, as specified by Chapter 1, “DLC Links”, section
-“Synchronous Data Link Control (SDLC)” of Systems Network Architecture
-Formats, GA27-3136-20, without the flag fields, zero-bit insertion, or Frame
-Check Sequence field, containing SNA path information units (PIUs) as the
-payload.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_SDLC</span></code>] SNA SDLC packets</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1631,8 +1609,7 @@ header giving metadata about the packet.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ETHERNET_MPACKET">
 <span class="sig-name descname"><span class="pre">ETHERNET_MPACKET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">274</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ETHERNET_MPACKET" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ETHERNET_MPACKET</span></code>] mPackets, as specified by IEEE 802.3br Figure
-99-4, starting with the preamble and always ending with a CRC field.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ETHERNET_MPACKET</span></code>] IEEE 802.3 mPackets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1714,9 +1691,7 @@ inserted.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ELEE">
 <span class="sig-name descname"><span class="pre">ELEE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">286</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ELEE" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ELEE</span></code>] Payload of lawful intercept packets using the ELEE protocol.
-The packet begins with the ELEE header; it does not include any transport-
-layer or lower-layer headers for protocols used to transport ELEE packets.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ELEE</span></code>] Reserved for ELEE lawful intercept protocol.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3907,7 +3882,7 @@ simple-multicast-03]</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=b807f3ab"></script>
+</div><script src="../../_static/documentation_options.js?v=98b66940"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
