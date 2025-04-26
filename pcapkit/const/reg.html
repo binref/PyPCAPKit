@@ -513,8 +513,7 @@ DLT_ name is historical.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.PPP_ETHER">
 <span class="sig-name descname"><span class="pre">PPP_ETHER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">51</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.PPP_ETHER" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP_ETHER</span></code>] PPPoE; the packet begins with a PPPoE header, as per RFC
-2516.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP_ETHER</span></code>] PPPoE session packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -636,7 +635,7 @@ link-layer header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IP_OVER_FC">
 <span class="sig-name descname"><span class="pre">IP_OVER_FC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">122</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IP_OVER_FC" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IP_OVER_FC</span></code>] IP and ATM over Fibre Channel, as per RFC 4338.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IP_OVER_FC</span></code>] IP and ATM over Fibre Channel.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -754,18 +753,13 @@ encapsulation.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.MTP3">
 <span class="sig-name descname"><span class="pre">MTP3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">141</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.MTP3" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MTP3</span></code>] Signaling System 7 Message Transfer Part Level 3, as
-specified by ITU-T Recommendation Q.704, with no MTP2 header preceding the
-MTP3 packet.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MTP3</span></code>] SS7 MTP3 packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.SCCP">
 <span class="sig-name descname"><span class="pre">SCCP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">142</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.SCCP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_SCCP</span></code>] Signaling System 7 Signalling Connection Control Part, as
-specified by ITU-T Recommendation Q.711, ITU-T Recommendation Q.712, ITU-T
-Recommendation Q.713, and ITU-T Recommendation Q.714, with no MTP3 or MTP2
-headers preceding the SCCP packet.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_SCCP</span></code>] SS7 SCCP packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -906,18 +900,14 @@ MAC frames.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.BACNET_MS_TP">
 <span class="sig-name descname"><span class="pre">BACNET_MS_TP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">165</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.BACNET_MS_TP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BACNET_MS_TP</span></code>] BACnet MS/TP frames, as specified by section 9.3
-MS/TP Frame Format of ANSI/ASHRAE Standard 135, BACnet® - A Data
-Communication Protocol for Building Automation and Control Networks,
-including the preamble and, if present, the Data CRC.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_BACNET_MS_TP</span></code>] BACnet MS/TP frames.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.PPP_PPPD">
 <span class="sig-name descname"><span class="pre">PPP_PPPD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">166</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.PPP_PPPD" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP_PPPD</span></code>] PPP in HDLC-like encapsulation, like LINKTYPE_PPP_HDLC,
-but with the 0xff address byte replaced by a direction indication—0x00 for
-incoming and 0x01 for outgoing.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_PPP_PPPD</span></code>] PPP preceded by a direction octet and an HDLC-like
+control field.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -974,13 +964,13 @@ ITU-T Recommendation G.7041/Y.1303.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ERF_ETH">
 <span class="sig-name descname"><span class="pre">ERF_ETH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">175</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ERF_ETH" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ERF_ETH</span></code>] An ERF header followed by Ethernet.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ERF_ETH</span></code>] Endace ERF records of type TYPE_ETH.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ERF_POS">
 <span class="sig-name descname"><span class="pre">ERF_POS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">176</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ERF_POS" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ERF_POS</span></code>] An ERF header followed by Packet-over-SONET.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ERF_POS</span></code>] Endace ERF records of type TYPE_POS_HDLC.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1114,8 +1104,7 @@ radiotap header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ERF">
 <span class="sig-name descname"><span class="pre">ERF</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">197</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ERF" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ERF</span></code>] Various link-layer types, with a pseudo-header, for Endace DAG
-cards; encapsulates Endace ERF records.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ERF</span></code>] Endace ERF records.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1355,8 +1344,7 @@ metadata header.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.DVB_CI">
 <span class="sig-name descname"><span class="pre">DVB_CI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">235</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.DVB_CI" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DVB_CI</span></code>] DVB-CI messages, with the message format specified by the
-PCAP format for DVB-CI specification.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_DVB_CI</span></code>] DVB-CI messages, with a pseudo-header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1400,7 +1388,7 @@ header, preamble and SFD, preceded by a Hilscher.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.IPOIB">
 <span class="sig-name descname"><span class="pre">IPOIB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">242</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.IPOIB" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IPOIB</span></code>] IP-over-InfiniBand, as specified by RFC 4391 section 6.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_IPOIB</span></code>] IP-over-InfiniBand.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1705,18 +1693,13 @@ Z-Wave chip over an RS-232 or USB serial connection, as described in section
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.USB_2_0">
 <span class="sig-name descname"><span class="pre">USB_2_0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">288</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.USB_2_0" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_2_0</span></code>] USB 2.0, 1.1, or 1.0 packet, beginning with a PID, as
-described by Chapter 8 “Protocol Layer” of the the Universal Serial Bus
-Specification Revision 2.0. Deprecated in favor of speed specific USB 2.0,
-1.1, or 1.0 linktypes.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_2_0</span></code>] USB 2.0, 1.1, or 1.0 packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.ATSC_ALP">
 <span class="sig-name descname"><span class="pre">ATSC_ALP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">289</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.ATSC_ALP" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ATSC_ALP</span></code>] ATSC Link-Layer Protocol frames, as described in section
-5 of the A/330 Link-Layer Protocol specification, found at the ATSC 3.0
-standards page, beginning with a Base Header.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_ATSC_ALP</span></code>] ATSC Link-Layer Protocol frames.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1741,32 +1724,25 @@ Systemautomation mbH netANALYZER NG hardware and software.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.USB_2_0_LOW_SPEED">
 <span class="sig-name descname"><span class="pre">USB_2_0_LOW_SPEED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">293</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.USB_2_0_LOW_SPEED" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_2_0_LOW_SPEED</span></code>] Low-Speed USB 2.0, 1.1, or 1.0 packet, beginning
-with a PID, as described by Chapter 8 “Protocol Layer” of the the Universal
-Serial Bus Specification Revision 2.0.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_2_0_LOW_SPEED</span></code>] Low-Speed USB 2.0, 1.1, or 1.0 packets..</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.USB_2_0_FULL_SPEED">
 <span class="sig-name descname"><span class="pre">USB_2_0_FULL_SPEED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">294</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.USB_2_0_FULL_SPEED" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_2_0_FULL_SPEED</span></code>] Full-Speed USB 2.0, 1.1, or 1.0 packet,
-beginning with a PID, as described by Chapter 8 “Protocol Layer” of the the
-Universal Serial Bus Specification Revision 2.0.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_2_0_FULL_SPEED</span></code>] Full-Speed USB 2.0, 1.1, or 1.0 packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.USB_2_0_HIGH_SPEED">
 <span class="sig-name descname"><span class="pre">USB_2_0_HIGH_SPEED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">295</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.USB_2_0_HIGH_SPEED" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_2_0_HIGH_SPEED</span></code>] High-Speed USB 2.0 packet, beginning with a
-PID, as described by Chapter 8 “Protocol Layer” of the the Universal Serial
-Bus Specification Revision 2.0.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_USB_2_0_HIGH_SPEED</span></code>] High-Speed USB 2.0 packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.AUERSWALD_LOG">
 <span class="sig-name descname"><span class="pre">AUERSWALD_LOG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">296</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.AUERSWALD_LOG" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_AUERSWALD_LOG</span></code>] Auerswald Logger Protocol, as described in this
-document.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_AUERSWALD_LOG</span></code>] Auerswald Logger Protocol packets.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1791,7 +1767,7 @@ described in the specification.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.const.reg.linktype.LinkType.MDB">
 <span class="sig-name descname"><span class="pre">MDB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">300</span></em><a class="headerlink" href="#pcapkit.const.reg.linktype.LinkType.MDB" title="Link to this definition">¶</a></dt>
-<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MDB</span></code>] MDB (Multi-Drop Bus) vending machine protocol.</p>
+<dd><p>[<code class="docutils literal notranslate"><span class="pre">DLT_MDB</span></code>] MDB (Multi-Drop Bus) messages, with a pseudo-header.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3882,7 +3858,7 @@ simple-multicast-03]</p>
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=98b66940"></script>
+</div><script src="../../_static/documentation_options.js?v=31f61d26"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
