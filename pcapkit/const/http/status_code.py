@@ -47,9 +47,10 @@ class StatusCode(IntEnum):
     #: Early Hints [:rfc:`8297`]
     EARLY_HINTS = 103, 'Early Hints'
 
-    #: Upload Resumption Supported (TEMPORARY - registered 2024-11-13, expires
-    #: 2025-11-13) [draft-ietf-httpbis-resumable-upload-05]
-    UPLOAD_RESUMPTION_SUPPORTED = 104, 'Upload Resumption Supported (TEMPORARY - registered 2024-11-13, expires 2025-11-13)'
+    #: Upload Resumption Supported (TEMPORARY - registered 2024-11-13, extension
+    #: registered 2025-09-15, expires 2026-11-13) [draft-ietf-httpbis-resumable-
+    #: upload-05]
+    UPLOAD_RESUMPTION_SUPPORTED = 104, 'Upload Resumption Supported (TEMPORARY - registered 2024-11-13, extension registered 2025-09-15, expires 2026-11-13)'
 
     #: OK [:rfc:`9110#section-15.3.1`]
     OK = 200, 'OK'
