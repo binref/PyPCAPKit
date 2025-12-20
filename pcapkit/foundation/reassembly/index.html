@@ -11,10 +11,10 @@
 <meta name="description" content="pcapkit.reassembly bases on algorithms described in RFC 791 and RFC 815, implements datagram reassembly of IP and TCP packets. Base Class, IP Datagram Reassembly- Base Class, IPv4 Datagram Reassemb..." />
 <link rel="index" title="Index" href="../../../genindex.html"><link rel="search" title="Search" href="../../../search.html"><link rel="next" title="Base Class" href="reassembly.html"><link rel="prev" title="Extractor for PCAP Files" href="../extraction.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 9.0.4 and Furo 2025.12.19 -->
         <title>Fragmented Packets Reassembly - PyPCAPKit</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -419,7 +419,7 @@ of IP and TCP packets.</p>
 <h2>Auxiliary Data<a class="headerlink" href="#auxiliary-data" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="pcapkit.foundation.reassembly.ReassemblyManager">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pcapkit.foundation.reassembly.</span></span><span class="sig-name descname"><span class="pre">ReassemblyManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pcapkit/foundation/reassembly.html#ReassemblyManager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.foundation.reassembly.ReassemblyManager" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pcapkit.foundation.reassembly.</span></span><span class="sig-name descname"><span class="pre">ReassemblyManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pcapkit/foundation/reassembly.html#ReassemblyManager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.foundation.reassembly.ReassemblyManager" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../corekit/infoclass.html#pcapkit.corekit.infoclass.Info" title="pcapkit.corekit.infoclass.Info"><code class="xref py py-class docutils literal notranslate"><span class="pre">Info</span></code></a></p>
 <p>Reassembly Manager.</p>
 <dl class="field-list simple">
@@ -435,19 +435,19 @@ of IP and TCP packets.</p>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.foundation.reassembly.ReassemblyManager.ipv4">
-<span class="sig-name descname"><span class="pre">ipv4</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">IPv4_Reassembly</span></em><a class="headerlink" href="#pcapkit.foundation.reassembly.ReassemblyManager.ipv4" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ipv4</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ip/ipv4.html#pcapkit.foundation.reassembly.ipv4.IPv4" title="pcapkit.foundation.reassembly.ipv4.IPv4"><span class="pre">IPv4</span></a></span><a class="headerlink" href="#pcapkit.foundation.reassembly.ReassemblyManager.ipv4" title="Link to this definition">¶</a></dt>
 <dd><p>IPv4 reassembly.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.foundation.reassembly.ReassemblyManager.ipv6">
-<span class="sig-name descname"><span class="pre">ipv6</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">IPv6_Reassembly</span></em><a class="headerlink" href="#pcapkit.foundation.reassembly.ReassemblyManager.ipv6" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ipv6</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="ip/ipv6.html#pcapkit.foundation.reassembly.ipv6.IPv6" title="pcapkit.foundation.reassembly.ipv6.IPv6"><span class="pre">IPv6</span></a></span><a class="headerlink" href="#pcapkit.foundation.reassembly.ReassemblyManager.ipv6" title="Link to this definition">¶</a></dt>
 <dd><p>IPv6 reassembly.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.foundation.reassembly.ReassemblyManager.tcp">
-<span class="sig-name descname"><span class="pre">tcp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TCP_Reassembly</span></em><a class="headerlink" href="#pcapkit.foundation.reassembly.ReassemblyManager.tcp" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">tcp</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="tcp.html#pcapkit.foundation.reassembly.tcp.TCP" title="pcapkit.foundation.reassembly.tcp.TCP"><span class="pre">TCP</span></a></span><a class="headerlink" href="#pcapkit.foundation.reassembly.ReassemblyManager.tcp" title="Link to this definition">¶</a></dt>
 <dd><p>TCP reassembly.</p>
 </dd></dl>
 
@@ -455,7 +455,7 @@ of IP and TCP packets.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pcapkit.foundation.reassembly.data.ReassemblyData">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pcapkit.foundation.reassembly.data.</span></span><span class="sig-name descname"><span class="pre">ReassemblyData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pcapkit/foundation/reassembly/data.html#ReassemblyData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.foundation.reassembly.data.ReassemblyData" title="Link to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pcapkit.foundation.reassembly.data.</span></span><span class="sig-name descname"><span class="pre">ReassemblyData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/pcapkit/foundation/reassembly/data.html#ReassemblyData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pcapkit.foundation.reassembly.data.ReassemblyData" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../corekit/infoclass.html#pcapkit.corekit.infoclass.Info" title="pcapkit.corekit.infoclass.Info"><code class="xref py py-class docutils literal notranslate"><span class="pre">Info</span></code></a></p>
 <p>Data storage for reassembly.</p>
 <dl class="field-list simple">
@@ -471,19 +471,19 @@ of IP and TCP packets.</p>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.foundation.reassembly.data.ReassemblyData.ipv4">
-<span class="sig-name descname"><span class="pre">ipv4</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple[IP_Datagram,</span> <span class="pre">...]</span></em><a class="headerlink" href="#pcapkit.foundation.reassembly.data.ReassemblyData.ipv4" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ipv4</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ip/ip.html#pcapkit.foundation.reassembly.data.ip.Datagram" title="pcapkit.foundation.reassembly.data.ip.Datagram"><span class="pre">Datagram</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#pcapkit.foundation.reassembly.data.ReassemblyData.ipv4" title="Link to this definition">¶</a></dt>
 <dd><p>IPv4 reassembled data.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.foundation.reassembly.data.ReassemblyData.ipv6">
-<span class="sig-name descname"><span class="pre">ipv6</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple[IP_Datagram,</span> <span class="pre">...]</span></em><a class="headerlink" href="#pcapkit.foundation.reassembly.data.ReassemblyData.ipv6" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ipv6</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="ip/ip.html#pcapkit.foundation.reassembly.data.ip.Datagram" title="pcapkit.foundation.reassembly.data.ip.Datagram"><span class="pre">Datagram</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#pcapkit.foundation.reassembly.data.ReassemblyData.ipv6" title="Link to this definition">¶</a></dt>
 <dd><p>IPv6 reassembled data.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pcapkit.foundation.reassembly.data.ReassemblyData.tcp">
-<span class="sig-name descname"><span class="pre">tcp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple[TCP_Datagram,</span> <span class="pre">...]</span></em><a class="headerlink" href="#pcapkit.foundation.reassembly.data.ReassemblyData.tcp" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">tcp</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="tcp.html#pcapkit.foundation.reassembly.data.tcp.Datagram" title="pcapkit.foundation.reassembly.data.tcp.Datagram"><span class="pre">Datagram</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#pcapkit.foundation.reassembly.data.ReassemblyData.tcp" title="Link to this definition">¶</a></dt>
 <dd><p>TCP reassembled data.</p>
 </dd></dl>
 
@@ -561,8 +561,8 @@ of IP and TCP packets.</p>
     </aside>
   </div>
 </div><script src="../../../_static/documentation_options.js?v=fa7f8deb"></script>
-    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
