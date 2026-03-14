@@ -2,7 +2,7 @@ aenum == 3.1.16
 appdirs == 1.4.4
 beautifulsoup4 == 4.14.3
 certifi == 2026.2.25
-chardet == 7.0.1
+chardet == 7.1.0
 charset-normalizer == 3.4.5
 dictdumper == 0.8.4.post6
 dpkt == 1.9.8
