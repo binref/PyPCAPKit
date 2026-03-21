@@ -3,6 +3,7 @@ Root Protocol
 
 .. module:: pcapkit.protocols.protocol
 .. module:: pcapkit.protocols.data.protocol
+.. currentmodule:: pcapkit.protocols.protocol
 
 :mod:`pcapkit.protocols.protocol` contains
 :class:`~pcapkit.protocols.protocol.Protocol` only, which is
@@ -12,9 +13,6 @@ utility arguments and methods of specified protocols.
 .. autoclass:: pcapkit.protocols.protocol.Protocol
    :no-members:
    :show-inheritance:
-
-   :param \*args: Arbitrary positional arguments.
-   :param \*\*kwargs: Arbitrary keyword arguments.
 
    .. autoproperty:: name
    .. autoproperty:: alias
@@ -46,6 +44,16 @@ utility arguments and methods of specified protocols.
 
    .. automethod:: expand_comp
 
+   .. autoattribute:: __layer__
+      :no-value:
+   .. autoattribute:: __proto__
+      :no-value:
+
+   .. autoattribute:: __schema__
+      :no-value:
+   .. autoattribute:: __header__
+      :no-value:
+
    .. automethod:: _read_packet
    .. automethod:: _get_payload
 
@@ -56,16 +64,9 @@ utility arguments and methods of specified protocols.
    .. automethod:: _decode_next_layer
    .. automethod:: _import_next_layer
 
-   .. autoattribute:: __layer__
-      :no-value:
-   .. autoattribute:: __proto__
-      :no-value:
-
-   .. autoattribute:: __data__
+   .. autoattribute:: _file
    .. autoattribute:: _info
-
-   .. autoattribute:: __schema__
-   .. autoattribute:: __header__
+   .. autoattribute:: __data__
 
    .. automethod:: __init__
    .. automethod:: __post_init__
@@ -78,6 +79,9 @@ utility arguments and methods of specified protocols.
    .. automethod:: __contains__
    .. automethod:: __index__
 
+   .. autoattribute:: _exlayer
+   .. autoattribute:: _exproto
+
 Data Models
 -----------
 
@@ -85,5 +89,22 @@ Data Models
    :members:
    :show-inheritance:
 
-   :param \*args: Arbitrary positional arguments.
-   :param \*\*kwargs: Arbitrary keyword arguments.
+Internal Definitions
+--------------------
+
+.. autoclass:: pcapkit.protocols.protocol.ProtocolBase
+   :no-members:
+   :show-inheritance:
+
+.. autoclass:: pcapkit.protocols.protocol.ProtocolMeta
+   :no-members:
+   :show-inheritance:
+
+Type Variables
+--------------
+
+.. data:: pcapkit.protocols.protocol._PT
+   :type: pcapkit.protocols.data.data.Data
+
+.. data:: pcapkit.protocols.protocol._ST
+   :type: pcapkit.protocols.schema.schema.Schema
